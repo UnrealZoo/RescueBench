@@ -1,0 +1,97 @@
+{
+  "models": {
+    "doubao": {
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "api_key_env": "ARK_API_KEY",
+      "model_name": "doubao-seed-1-6-vision-250815",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "openai_gpt4_1": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "gpt-4.1",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "openai_gpt4o_2024_11_20": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "gpt-4o-2024-11-20",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "gemini_pro": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "gemini-2.5-pro-preview-03-25",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "gemini-2.0-flash-lite": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "gemini-2.0-flash-lite",
+      "max_tokens": 500,
+      "temperature": 0.3
+    },
+    "gpt-5-2025-08-07": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "gpt-5-2025-08-07",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "claude-sonnet-4-5": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "claude-sonnet-4-5-20250929-thinking",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "gemini-2.5-flash": {
+      "base_url": "https://xiaoai.plus/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model_name": "gemini-2.5-flash-thinking",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "qwen-plus": {
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_env": "QWEN_API_KEY_QW",
+      "model_name": "qwen3-vl-plus",
+      "max_tokens": 20000,
+      "temperature": 0.3
+    },
+    "deepseek-v3.1": {
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_env": "QWEN_API_KEY_DS",
+      "model_name": "deepseek-v3.1",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "qwen3-32b": {
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_env": "QWEN_API_KEY_DS",
+      "model_name": "qwen3-vl-32b-thinking",
+      "max_tokens": 10000,
+      "temperature": 0.3
+    },
+    "qwen3-8b": {
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_env": "QWEN_API_KEY_DS",
+      "model_name": "qwen3-vl-8b-thinking",
+      "max_tokens": 8192,
+      "temperature": 0.3
+    },
+    "qwen3-0.6b": {
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_env": "QWEN_API_KEY_DS",
+      "model_name": "qwen3-0.6b",
+      "max_tokens": 8192,
+      "temperature": 0.3
+    }
+
+  },
+  "default_model": "none"
+}

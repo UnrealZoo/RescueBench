@@ -1,0 +1,71 @@
+{
+    "env_name": "track_train",
+    "env_map": "track_train",
+    "env_bin": {
+        "Linux": "Rescue_Linux/Linux/Rescue/Binaries/Linux/Rescue",
+        "Win": "Rescue_Win64/Rescue/Binaries/Win64/Rescue.exe",
+        "Mac": "Rescue_Mac/Rescue.app"
+    },
+    "third_cam": {
+        "cam_id": 0,
+        "pitch": -90,
+        "yaw": 0,
+        "roll": 0,
+        "height_top_view": 1253.053,
+        "fov": 90
+    },
+    "height": 253.053,
+    "interval": 1000,
+    "agents": {
+        "player": {
+            "name": ["BP_Character_C_1"],
+            "cam_id": [1],
+            "class_name": ["bp_character_C"],
+            "internal_nav": true,
+            "scale": [1, 1, 1],
+            "relative_location": [20, 0, 0],
+            "relative_rotation": [0, 0, 0],
+            "head_action_continuous": {"high": [15, 15, 15], "low": [-15, -15, -15]},
+            "head_action": [[0, 0, 0], [0, 30, 0], [0, -30, 0]],
+            "animation_action": ["stand", "jump", "crouch", "carry", "drop", "open_door"],
+            "move_action": [[0, 100], [0, -100], [15, 50], [-15, 50], [30, 0], [-30, 0], [0, 0]],
+            "move_action_continuous": {"high": [30, 100], "low": [-30, -100]}
+        }
+    },
+    "safe_start": [
+        [-40.0, 40.0, 253.053]
+    ],
+    "reset_area": [-1703.028, 1328.008, -1235.75, 1042.865, 152.522, 253.053],
+    "random_init": false,
+    "env": {
+        "interactive_door": [],
+        "injured_player": ["BP_Enemy_Character_C_1"],
+        "stretcher": ["StaticMeshActor_1"],
+        "ambulance": ["BP_Drivable_Ambulance01_C_1"],
+        "level_1": {
+            "injured_agent_id": [0],
+            "agent_loc": [
+                [-40.0, 40.0, 253.0, 0, 0, 0]
+            ],
+            "injured_player_loc": [
+                [260.0, -339.397, 295.316, 0.0, 0.0, 0.0]
+            ],
+            "stretcher_loc": [
+                [570.0, -1470.0, 100.0, 0.0, -10.0, 0.0]
+            ],
+            "ambulance_loc": [
+                [550.0, -1450.0, 100.0, 0.0, 0.0, 0.0]
+            ],
+            "reference_text": [
+                ["A generated task for track_train map."]
+            ],
+            "reference_image_path": [
+                ["track_train_default.png"]
+            ]
+        }
+    },
+    "obj_num": 84,
+    "size": 780.915,
+    "area": 1952.288,
+    "bbox": [49.4, 39.52, 0.4]
+}

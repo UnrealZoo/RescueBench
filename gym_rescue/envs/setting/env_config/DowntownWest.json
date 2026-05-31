@@ -1,0 +1,380 @@
+{
+    "env_name": "DowntownWest",
+    "env_bin": {
+        "Linux": "Rescue_Linux/Linux/Rescue/Binaries/Linux/Rescue",
+        "Win": "Rescue_Win64_v1.0.9\\Rescue\\Binaries\\Win64\\Rescue.exe",
+        "Mac": "Rescue_Mac/Rescue.app"
+    },
+    "env_map": "DowntownWest",
+    "third_cam": {
+        "cam_id": 0,
+        "pitch": -90,
+        "yaw": 0,
+        "roll": 0,
+        "height_top_view": 1090.0,
+        "fov": 90
+    },
+    "height": 90.0,
+    "interval": 1000,
+    "agents": {
+        "player": {
+            "name": [
+                "BP_Character_C_1"
+            ],
+            "cam_id": [
+                1
+            ],
+            "class_name": [
+                "bp_character_C"
+            ],
+            "internal_nav": true,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "relative_location": [
+                20,
+                0,
+                0
+            ],
+            "relative_rotation": [
+                0,
+                0,
+                0
+            ],
+            "head_action_continuous": {
+                "high": [
+                    15,
+                    15,
+                    15
+                ],
+                "low": [
+                    -15,
+                    -15,
+                    -15
+                ]
+            },
+            "head_action": [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    30,
+                    0
+                ],
+                [
+                    0,
+                    -30,
+                    0
+                ]
+            ],
+            "animation_action": [
+                "stand",
+                "jump",
+                "crouch",
+                "carry",
+                "drop",
+                "open_door"
+            ],
+            "move_action": [
+                [
+                    0,
+                    100
+                ],
+                [
+                    0,
+                    -100
+                ],
+                [
+                    15,
+                    50
+                ],
+                [
+                    -15,
+                    50
+                ],
+                [
+                    30,
+                    0
+                ],
+                [
+                    -30,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            "move_action_continuous": {
+                "high": [
+                    30,
+                    100
+                ],
+                "low": [
+                    -30,
+                    -100
+                ]
+            }
+        },
+        "drone": {
+            "name": [
+                "BP_Drone01_C_1"
+            ],
+            "cam_id": [
+                2
+            ],
+            "class_name": [
+                "BP_drone01_C"
+            ],
+            "internal_nav": false,
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "relative_location": [
+                0,
+                0,
+                0
+            ],
+            "relative_rotation": [
+                0,
+                0,
+                0
+            ],
+            "move_action": [
+                [
+                    0.5,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    -0.5,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0.5,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    -0.5,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0.5,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    -0.5,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    -1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "move_action_continuous": {
+                "high": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "low": [
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                ]
+            }
+        }
+    },
+    "safe_start": [
+        [
+            -11900.0,
+            -700.0,
+            82.097
+        ],
+        [
+            -12727.069,
+            991.835,
+            54.894999999999996
+        ],
+        [
+            -12077.089,
+            -2099.836,
+            41.286
+        ],
+        [
+            -11184.544,
+            -1208.43,
+            40.0
+        ],
+        [
+            -11741.649,
+            -1525.567,
+            70.0
+        ],
+        [
+            -13610.0,
+            -1745.0,
+            90.0
+        ],
+        [
+            -11389.445,
+            316.81,
+            40.0
+        ],
+        [
+            -11836.318,
+            -2183.359,
+            40.0
+        ],
+        [
+            -11167.446,
+            -1339.815,
+            40.0
+        ],
+        [
+            -10690.969,
+            793.62,
+            42.375
+        ],
+        [
+            -12101.355,
+            -245.589,
+            41.691
+        ]
+    ],
+    "reset_area": [
+        -13610.0,
+        -10690.969,
+        -2183.359,
+        991.835,
+        40.0,
+        90.0
+    ],
+    "random_init": false,
+    "env": {
+        "interactive_door": [],
+        "injured_player": [
+            "BP_Enemy_Character_C_1"
+        ],
+        "stretcher": [
+            "StaticMeshActor_1"
+        ],
+        "ambulance": [
+            "BP_Drivable_Ambulance01_C_1"
+        ],
+        "injured_player_loc": [
+            [
+                -11910.0,
+                -470.0,
+                82.097,
+                0.0,
+                0.0,
+                0.0
+            ]
+        ],
+        "rescue_loc": [
+            [
+                -11850.0,
+                -1160.0,
+                -20.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        ],
+        "level_1": {
+            "injured_agent_id": [
+                0
+            ],
+            "agent_loc": [
+                [
+                    -11900.0,
+                    -700.0,
+                    82.097
+                ]
+            ],
+            "injured_player_loc": [
+                [
+                    -11910.0,
+                    -470.0,
+                    82.097,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ],
+            "stretcher_loc": [
+                [
+                    -11850.0,
+                    -1160.0,
+                    -20.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ],
+            "ambulance_loc": [
+                [
+                    -11850.0,
+                    -1160.0,
+                    -20.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ],
+            "reference_text": [
+                [
+                    "Task auto-generated by script."
+                ]
+            ],
+            "reference_image_path": [
+                [
+                    "default.png"
+                ]
+            ]
+        }
+    },
+    "obj_num": 6630,
+    "size": 581560.0,
+    "area": 207700.0,
+    "bbox": [
+        670.0,
+        310.0,
+        2.8
+    ]
+}

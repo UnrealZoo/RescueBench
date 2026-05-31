@@ -1,0 +1,375 @@
+{
+  "env_name": "Forglar_Map",
+  "env_map": "Forglar_Map",
+    "env_bin":{
+    "Linux": "Rescue_Linux/Linux/Rescue/Binaries/Linux/Rescue",
+    "Win": "Rescue_Win64_v1.0.4\\Rescue\\Binaries\\Win64\\Rescue.exe",
+    "Mac":  "Rescue_Mac/Rescue.app"
+  },
+  "third_cam": {
+    "cam_id": 0,
+    "pitch": -90,
+    "yaw": 0,
+    "roll": 0,
+    "height_top_view": -30505.957,
+    "fov": 90
+  },
+  "height": -31505.957,
+  "interval": 1000,
+  "agents": {
+    "player": {
+      "name": [
+        "BP_Character_C_1"
+      ],
+      "cam_id": [
+        1
+      ],
+      "class_name": [
+        "bp_character_C"
+      ],
+      "internal_nav": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "relative_location": [
+        20,
+        0,
+        0
+      ],
+      "relative_rotation": [
+        0,
+        0,
+        0
+      ],
+      "head_action_continuous": {
+        "high": [
+          15,
+          15,
+          15
+        ],
+        "low": [
+          -15,
+          -15,
+          -15
+        ]
+      },
+      "head_action": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          -30,
+          0
+        ]
+      ],
+      "animation_action": [
+        "stand",
+        "jump",
+        "crouch",
+        "carry",
+        "drop",
+        "open_door"
+      ],
+      "move_action": [
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          -100
+        ],
+        [
+          15,
+          50
+        ],
+        [
+          -15,
+          50
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          -30,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "move_action_continuous": {
+        "high": [
+          30,
+          100
+        ],
+        "low": [
+          -30,
+          -100
+        ]
+      }
+    }
+  },
+  "safe_start": [
+    [
+      -23640.0,
+      -238480.0,
+      -31505.957
+    ]
+  ],
+  "reset_area": [
+    -23640.0,
+    -23640.0,
+    -238480.0,
+    -238480.0,
+    -31505.957,
+    -31505.957
+  ],
+  "random_init": false,
+  "env": {
+    "interactive_door": [],
+    "injured_player": [
+      "BP_Enemy_Character_C_1"
+    ],
+    "stretcher": [
+      "StaticMeshActor_621"
+    ],
+    "ambulance": [
+      "BP_Drivable_Ambulance01_C_2"
+    ],
+    "level_2": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        15,
+        6,
+        7,
+        8
+      ],
+      "agent_loc": [
+        [ -18709.0, -238708.593180, -31500.841337, 0.000000, 0.000000, 0.000000 ],
+        [ -17603.918769, -237888.598280, -31588.841365, 0.000000, -90.000000, 0.000000 ],
+        [ -17931.935223, -239333.601561, -31572.358685, 0.000000, 180.000000, 0.000000 ],
+        [ -18545.250953, -237415.082842, -31593.610838, 0.000000, 90.000000, 0.000000 ],
+        [ -21217.111807, -237506.732012, -31726.263443, 0.000000, 90.000000, 0.000000 ],
+        [-25625.052957,-236285.691842,-30996.038131,0,180,0],
+        [-21640.875338,-237572.365604,-31592.105339,0,90,0],
+        [-21346.445787,-237571.999998,-31612.502433,0,-90,0]
+      ],
+      "injured_player_loc": [
+        [ -19830.0, -238900.0, -31588.841337, 0.000000, 0.000000, 0.000000 ],
+        [ -18280.404824, -238597.872774, -31590.642082, 0.000000, 90.000000, 0.000000 ],
+        [ -18019.142256, -240034.257540, -31590.642089, 0.000000, 90.000000, 0.000000 ],
+        [ -17997.907871, -236672.986197, -31626.402940, 0.000000, 180.000000, 0.000000 ],
+        [ -21603.109191, -236471.256490, -31539.558896, 0.000000, 180.000000, 0.000000 ],
+        [-26759.965265,-237332.993084,-30719.999994,0,180,0],
+        [-20024.323362,-236869.828607,-31596.000000,0,90,0],
+        [-21846.401983,-238755.350612,-31548.579236,0,0,0]
+
+      ],
+      "stretcher_loc": [
+        [ -19062.148946, -239177.995870, -31690.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -18642.990441, -239099.685609, -31690.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -18497.820957, -239643.568096, -31690.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -18214.925032, -237680.229849, -31500.592028, 0.000000, 90.000000, 0.000000 ],
+        [ -22115.798598, -237114.858425, -31500.872105, 0.000000, 0.000000, 0.000000 ],
+        [-25913.647846,-236141.760883,-31090.337938,0,0,0],
+        [-22218.688609,-237132.993489,-31581.794070,0,90,0],
+        [-21837.688609,-237080.748932,-31500.794070,0,90,0]
+      ],
+      "ambulance_loc": [
+        [ -18995.233511, -239348.414553, -31694.309032, 0.000000, 0.000000, 0.000000 ],
+        [ -18625.913480, -239348.414553, -31694.309032, 0.000000, 0.000000, 0.000000 ],
+        [ -18625.913478, -239369.754890, -31694.309032, 0.000000, 0.000000, 0.000000 ],
+        [ -18137.110274, -237865.577057, -31766.655323, 0.000000, 0.000000, 0.000000 ],
+        [ -22320.194059, -237006.536846, -31638.382402, 0.000000, 90.000000, 0.000000 ],
+        [-23451.947473,-236615.047491,-31637.929627,0,90,0],
+        [-21837.688609,-236631.094276,-31637.794070,0,0,0],
+        [-21837.688612,-236827.764399,-31637.794070,0,0,0]
+      ],
+      "reference_text": [
+        [ "There is a woman injured lying next to the stairs behind you. She is wearing a white shirt with blue sleeves and blue jeans. Nearby, there is a wooden structure with some wooden boxes placed on the ground. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying behind the arched gate in front of you. She is wearing a floral short-sleeved blouse, blue jeans, and brown boots. Around her, there are stone walls, arched doorways, and patches of green plants. Sunlight casts shadows on the stone floor. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "The injured woman is lying near a stone archway to your right. She is wearing a white floral shirt, blue jeans, and black boots. The surroundings feature an ancient stone wall, a large statue, and a palm tree. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the yard of the house in front of you. She wears a floral shirt, blue jeans, and black boots. The environment includes a large building with a window covered with wooden bars, a nearby tree, and a lamp post.Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured man lying to the right of the house in front of you. He is wearing a yellow shirt, blue jeans. The surrounding environment consists of sandy ground with a few scattered rocks, and a tree is visible beside her. Please find him and carry her to the yellow ambulance stretcher." ],
+        ["There is an injured woman wearing a dark vest, white shirt, and dark pants lying on the platform at the top of the stairs in front of you, near an arched entrance of an ancient stone structure and a crouching gargoyle statue. You need to find her and carry her to the yellow ambulance stretcher."],
+        ["There is an injured man lying in the courtyard of the house to your left. He is wearing a black suit and dress shoes. The courtyard has a sandy ground, surrounded by stone walls, with a barred window and an arched entrance leading inside. You need to find him and carry him to the yellow ambulance stretcher."],
+        ["There is an injured man lying to the left of the building in front of you. He is wearing a gray suit, a white shirt, and a red tie. The area has sandy ground, an ancient stone structure, and a large gargoyle statue. Sunlight casts long shadows.You need to find him and carry him to the yellow ambulance stretcher."]
+      ],
+      "reference_image_path": [
+        [ "Forglar_Map_level_2_0.png" ],
+        [ "Forglar_Map_level_2_1.png" ],
+        [ "Forglar_Map_level_2_2.png" ],
+        [ "Forglar_Map_level_2_3.png" ],
+        [ "Forglar_Map_level_2_4.png" ],
+        [ "Forglar_Map_level_2_5.png" ],
+        [ "Forglar_Map_level_2_6.png" ],
+        [ "Forglar_Map_level_2_7.png" ]
+
+      ]
+    },
+    "level_3": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        14,
+        6,
+        7,
+        8
+      ],
+      "agent_loc": [
+        [ -19341.145086, -237888.598292, -31588.841359, 0.000000, -90.000000, 0.000000 ],
+        [ -17417.984585, -238426.846487, -31588.841371, 0.000000, 180.000000, 0.000000 ],
+        [ -18096.369794, -239698.339378, -31572.358679, 0.000000, -90.000000, 0.000000 ],
+        [ -16084.624307, -238471.598391, -31600.875924, 0.000000, 0.000000, 0.000000 ],
+        [ -22820.499355, -238235.966801, -31393.104815, 0.000000, -90.000000, 0.000000 ],
+        [-25625.052957,-236285.691842,-30996.038131,0,180,0],
+        [-21747.932920,-237572.365604,-31449.061384,0,90,0],
+        [-20538.244701,-237571.999998,-31612.502449,0,180,0]
+      ],
+      "injured_player_loc": [
+        [ -19538.268304, -238741.064343, -31590.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -17894.686935, -239109.732784, -31590.642082, 0.000000, 90.000000, 0.000000 ],
+        [ -18653.245405, -240453.511207, -31590.642090, 0.000000, 90.000000, 0.000000 ],
+        [ -14972.794056, -238147.438188, -31520.464759, 0.000000, 180.000000, 0.000000 ],
+        [ -22629.910313, -239609.500044, -31481.360363, 0.000000, 180.000000, 0.000000 ],
+        [-27937.572138,-237655.171625,-30720.000000,0,90,0],
+        [-20295.445575,-235965.213349,-31598.155542,0,90,0],
+        [-20916.323231,-239154.754718,-31575.000000,0,0,0]
+      ],
+      "stretcher_loc": [
+        [ -19062.148945, -239099.685609, -31690.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -18642.990441, -239099.685609, -31690.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -18497.820957, -239643.568096, -31690.642084, 0.000000, 90.000000, 0.000000 ],
+        [ -16084.624307, -238106.468113, -31706.757160, 0.000000, 90.000000, 0.000000 ],
+        [ -22442.859632, -238290.496894, -31544.529737, 0.000000, 0.000000, 0.000000 ],
+        [-25913.647846,-236141.760883,-31090.337938,0,0,0],
+        [-22187.688609,-237229.993489,-31477.794070,0,90,0],
+        [-21837.688609,-237080.748932,-31637.794070,0,90,0]
+
+      ],
+      "ambulance_loc": [
+        [ -18995.233511, -239348.414553, -31694.309032, 0.000000, 0.000000, 0.000000 ],
+        [ -18625.913480, -239348.414553, -31694.309032, 0.000000, 0.000000, 0.000000 ],
+        [ -18625.913478, -239483.595663, -31694.309032, 0.000000, 0.000000, 0.000000 ],
+        [ -16084.624329, -237860.648463, -31705.629725, 0.000000, 0.000000, 0.000000 ],
+        [ -22917.380605, -237492.001133, -31638.382400, 0.000000, 0.000000, 0.000000 ],
+        [-23451.947473,-236615.047491,-31637.929627,0,90,0],
+        [-21837.688609,-236631.094276,-31637.794070,0,0,0],
+        [-21837.688612,-236827.764399,-31637.794070,0,0,0]
+      ],
+      "reference_text": [
+        [ "The injured woman is lying behind the archway in front of you. There is a staircase to her right, a wooden structure nearby, and some palm trees in the background. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying behind the arched gate in front of you. She is next to a large stone statue with wings, near a wall with multiple arched openings and green plants. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the room in front of you. There is a window with a view of the outside, showing an ambulance in the distance. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "This injured woman is lying on the ground in front of a window, with a sandy floor and an archway beside her. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying behind the archway in front of you. She is lying on the sand, surrounded by three archways. Please find her and carry her to the yellow ambulance stretcher." ],
+        ["There is an injured woman lying behind the arched gate at the top of the stairs in front of you.Please find her and carry her to the yellow ambulance stretcher."],
+        ["There is an injured man lying inside the house in front of you.Please find him and carry him to the yellow ambulance stretcher."],
+        ["There is an injured man lying inside the building to your right,lying on the sand.Please find him and carry him to the yellow ambulance stretcher."]
+      ],
+      "reference_image_path": [
+        [ "Forglar_Map_level_3_0.png" ],
+        [ "Forglar_Map_level_3_1.png" ],
+        [ "Forglar_Map_level_3_2.png" ],
+        [ "Forglar_Map_level_3_3.png" ],
+        [ "Forglar_Map_level_3_4.png" ],
+        [ "Forglar_Map_level_3_5.png" ],
+        [ "Forglar_Map_level_3_6.png" ],
+        [ "Forglar_Map_level_3_7.png" ]
+      ]
+    },
+    "level_4": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        13,
+        6,
+        7,
+        8
+      ],
+      "agent_loc": [
+        [ -18992.364724, -238824.384721, -31572.358678, 0.000000, 180.000000, 0.000000 ],
+        [ -16084.624307, -239369.658374, -31600.875931, 0.000000, -90.000000, 0.000000 ],
+        [ -18675.452302, -238688.232998, -31552.873215, 0.000000, 90.000000, 0.000000 ],
+        [ -23787.137667, -236980.516435, -31515.753531, 0.000000, 120.000000, 0.000000 ],
+        [ -25625.052957, -236285.691842, -31009.275280, 0.000000, 180.000000, 0.000000 ],
+        [-25625.052958,-236285.691842,-30995.231151,0,0,0],
+        [-19083.101888,-238683.693220,-31551.361136,0,90,0],
+        [-19542.465611,-236937.784032,-31599.490115,0,-90,0]
+      ],
+      "injured_player_loc": [
+        [ -20914.000000, -239995.000000, -31104.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -17208.927942, -242295.483987, -30558.523394, 0.000000, 180.000000, 0.000000 ],
+        [ -18305.423306, -235808.217427, -31626.402951, 0.000000, 0.000000, 0.000000 ],
+        [ -26594.502001, -236568.222495, -30722.024275, 0.000000, 180.000000, 0.000000 ],
+        [ -28180.888882, -235913.044208, -30455.543303, 0.000000, 180.000000, 0.000000 ],
+        [-24791.729716,-235370.815435,-31448.871196,0,90,0],
+        [-20295.445575,-235965.213349,-31598.155542,0,90,0],
+        [-20916.323231,-239154.754718,-31575.000000,0,0,0]
+      ],
+      "stretcher_loc": [
+        [ -19088.796324, -239160.711880, -31631.057617, 0.000000, 90.000000, 0.000000 ],
+        [ -16467.891811, -239166.124065, -31706.757151, 0.000000, 90.000000, 0.000000 ],
+        [ -18214.925032, -237783.483049, -31767.592028, 0.000000, 0.000000, 0.000000 ],
+        [ -23828.772397, -236627.763465, -31634.978867, 0.000000, 0.000000, 0.000000 ],
+        [ -25913.647846, -236141.760882, -31090.554657, 0.000000, 0.000000, 0.000000 ],
+        [-23283.317611,-236075.238232,-31637.504328,0,0,0],
+        [-21837.688609,-236815.993489,-31637.794070,0,90,0],
+        [-21837.688609,-237080.748932,-31637.794070,0,90,0]
+      ],
+      "ambulance_loc": [
+        [ -18966.964011, -239483.595663, -31694.309029, 0.000000, 0.000000, 0.000000 ],
+        [ -16457.284219, -238932.053554, -31705.629725, 0.000000, 0.000000, 0.000000 ],
+        [ -17845.845624, -237865.577057, -31766.655321, 0.000000, 0.000000, 0.000000 ],
+        [ -23451.947473, -236615.047491, -31638.382400, 0.000000, 90.000000, 0.000000 ],
+        [ -23451.947473, -236615.047491, -31638.382400, 0.000000, 90.000000, 0.000000 ],
+        [-22813.062083,-236006.401426,-31637.929637,0,0,0],
+        [-21837.688609,-236631.094276,-31637.794070,0,0,0],
+        [-21837.688612,-236827.764399,-31637.794070,0,0,0]
+      ],
+      "reference_text": [
+        [ "There is an injured woman lying on the second-floor platform. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying above the sand slope in front of you.Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the house behind the arched door in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying at the top of the stairs in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the house above the stairs in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        ["There is an injured woman lying below the stairs in front of you.Please find her and carry her to the yellow ambulance stretcher."],
+        ["There is an injured man lying inside the house behind the arched gate in front of you.Please find him and carry him to the yellow ambulance stretcher."],
+        ["There is an injured man lying inside a building with an arched doorway.Please find him and carry him to the yellow ambulance stretcher."]
+      ],
+      "reference_image_path": [
+        [ "Forglar_Map_level_4_0.png" ],
+        [ "Forglar_Map_level_4_1.png" ],
+        [ "Forglar_Map_level_4_2.png" ],
+        [ "Forglar_Map_level_4_3.png" ],
+        [ "Forglar_Map_level_4_4.png" ],
+        [ "Forglar_Map_level_4_5.png" ],
+        [ "Forglar_Map_level_4_6.png" ],
+        [ "Forglar_Map_level_4_7.png" ]
+      ]
+    }
+
+  },
+  
+  "obj_num": 747
+}

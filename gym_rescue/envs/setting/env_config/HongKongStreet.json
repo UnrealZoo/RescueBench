@@ -1,0 +1,358 @@
+{
+    "env_name": "HongKongStreet",
+    "env_map": "HongKongStreet",
+     "env_bin":{
+    "Linux": "Rescue_Linux/Linux/Rescue/Binaries/Linux/Rescue",
+    "Win": "Rescue_Win64_v1.0.8\\Rescue\\Binaries\\Win64\\Rescue.exe",
+    "Mac":  "Rescue_Mac/Rescue.app"
+  },
+    "third_cam": {
+        "cam_id": 0,
+        "pitch": -90,
+        "yaw": 0,
+        "roll": 0,
+        "height_top_view": 1089.384,
+        "fov": 90
+    },
+    "height": 89.384,
+    "interval": 1000,
+    "agents": {
+        "player": {
+            "name": [
+                "BP_Character_C_0"
+            ],
+            "cam_id": [
+                1
+            ],
+            "class_name": [
+                "bp_character_C"
+            ],
+            "internal_nav": true,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "relative_location": [
+                20,
+                0,
+                0
+            ],
+            "relative_rotation": [
+                0,
+                0,
+                0
+            ],
+            "head_action_continuous": {
+                "high": [
+                    15,
+                    15,
+                    15
+                ],
+                "low": [
+                    -15,
+                    -15,
+                    -15
+                ]
+            },
+            "head_action": [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    30,
+                    0
+                ],
+                [
+                    0,
+                    -30,
+                    0
+                ]
+            ],
+            "animation_action": [
+                "stand",
+                "jump",
+                "crouch",
+                "carry",
+                "drop",
+                "open_door"
+            ],
+            "move_action": [
+                [
+                    0,
+                    100
+                ],
+                [
+                    0,
+                    -100
+                ],
+                [
+                    15,
+                    50
+                ],
+                [
+                    -15,
+                    50
+                ],
+                [
+                    30,
+                    0
+                ],
+                [
+                    -30,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            "move_action_continuous": {
+                "high": [
+                    30,
+                    100
+                ],
+                "low": [
+                    -30,
+                    -100
+                ]
+            }
+        }
+    },
+    "safe_start": [
+        [
+            18720.0,
+            -860.0,
+            89.384
+        ]
+    ],
+    "reset_area": [
+        18720.0,
+        18720.0,
+        -860.0,
+        -860.0,
+        89.384,
+        89.384
+    ],
+    "random_init": false,
+  "env": {
+    "interactive_door": [],
+    "injured_player": [
+      "BP_Enemy_Character_C_0"
+    ],
+    "stretcher": [
+      "StaticMeshActor_0"
+    ],
+    "ambulance": [
+      "BP_Drivable_Ambulance01_C_0"
+    ],
+
+    "level_2": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        6,
+        7,
+        8
+      ],
+      "agent_loc": [
+        [ 19090, -1110, 76, 0, -30, 0 ],
+        [ 19660, -6030, 76, 0, -219, 0 ],
+        [ 19240.844826, -2693.006177, 126.703495, 0, 90, 0 ],
+        [ 19240.844826, -2693.006177, 126.703495, 0, 90, 0 ],
+        [ 19240.844826, -2693.006177, 126.703495, 0, 90, 0 ],
+        [18065.293610,-756.959789,82.049094,0,90,0],
+        [18939.202373,-713.487340,82.107042,0,0,0]
+      ],
+      "injured_player_loc": [
+        [ 19870, -1570, 93, 0, -30, 0 ],
+        [ 18990, -5440, 83, 0, -30, 0 ],
+        [ 17932.503659, -537.471083, 89.972684, 0, 0, 0 ],
+        [ 21715.458806, -724.389621, 90.386221, 0, -30, 0 ],
+        [ 19722.095191, -5725.813096, 88.660262, 0, 0, 0 ],
+        [16446.418182,-415.112382,89.660262,0,0,0],
+        [20017.666388,540.042757,99.899985,0,90,0]
+
+      ],
+      "stretcher_loc": [
+        [ 19640, -650, -10, 0, 0, 0 ],
+        [ 19190, -4460, -10, 0, 0, 0 ],
+        [ 19394.635366, -2150.785932, -10, 0, 0, 0 ],
+        [ 19394.635366, -2150.785932, -10, 0, 0, 0 ],
+        [ 19394.635366, -2150.785932, -10, 0, 0, 0 ],
+        [17563.569778,-851.514336,-10.000000,0,90,0],
+        [19833.271083,-607.000000,-9.999997,0,90,0]
+
+      ],
+      "ambulance_loc": [
+        [ 19930, -770, -10, 0, 130, 0 ],
+        [ 19480, -4580, -10, 0, 90, 0 ],
+        [ 19534.215312, -2559.913154, -10, 0, 90, 0 ],
+        [ 19534.215312, -2559.913154, -10, 0, 90, 0 ],
+        [ 19534.215312, -2559.913154, -10, 0, 90, 0 ],
+        [17463.255098,-1067.810340,-9.453911,0,180,0],
+        [19874.337778,-850.000000,-9.453910,0,180,0]
+      ],
+      "reference_text": [
+        [ "The injured person is lying on a red brick sidewalk in front of a store named \"MATCONC Health Food,\" wearing a black long-sleeve shirt and beige pants. A street sign for \"Tung Cho Street\" stands nearby, next to a red gas cylinder and a bicycle leaning against a railing. You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured person is lying in the middle of the road near a yellow dividing line, wearing a light-colored shirt and dark pants. An ambulance is parked nearby with its rear facing the scene, and a stretcher is positioned on the road. The surrounding area includes a blue parking sign, storefronts with closed shutters, signs in multiple languages, and construction barriers with traffic cones along the sidewalk. You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured female wearing a white shirt and blue pants is turning right on the street ahead of you at the crossroads. Around her, there are various shops and signs, including a pet shop, a currency exchange, and a restaurant.Beside you are the ambulance and stretcher parked on the street. You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured female wearing a white shirt and blue pants is turning left on the street ahead of you at the crossroads. She was lying at the end of a street, next to a shop that installed banners. Beside you are the ambulance and stretcher parked on the street You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured male wearing a dark green shirt, is lying unconscious on a yellow-and-black-striped caution tape on the street behind you.Behind her, there are several closed shops, including a restaurant named \"Jack Restaurant\" with red Chinese characters on its signboard.Beside you are the ambulance and stretcher parked on the street You need to find the person, carry the person to the ambulance stretcher." ],
+        ["The injured male wearing a black suit is lying unconscious on the street where you're currently located, near a green letter box. Behind him, there are several closed shops, including a beauty salon with a red signboard that reads \"Beauty Salon\". There are also two public phone booths labeled \"PCWCW\" and a rusted metal door with a warning sign. You need to find the person, carry the person to a safe location."],
+        ["There is an injured man lying on the right side of the intersection where you are. He is wearing a black suit and is unconscious near a building entrance. Behind him, there is a beauty salon and a children's clothing store. Nearby, there are cardboard boxes and construction barriers. Further down, there is a shop called \" Brisbane Bay Aquarium\" . You need to find the person and carry him to a safe location."]
+      ],
+      "reference_image_path": [
+        [ "HongKongStreet_level_2_0.png" ],
+        [ "HongKongStreet_level_2_1.png" ],
+        [ "HongKongStreet_level_2_2.png" ],
+        [ "HongKongStreet_level_2_3.png" ],
+        [ "HongKongStreet_level_2_4.png" ],
+        [ "HongKongStreet_level_2_5.png" ],
+        [ "HongKongStreet_level_2_6.png" ]
+      ]
+    },
+    "level_3": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        8,
+        7,
+        6
+      ],
+      "agent_loc": [
+        [ 18431.274879, -883.817939, 126.863684, 0, 0, 0 ],
+        [ 20675.20805, -883.817945, 124.638694, 0, 180, 0 ],
+        [ 18751.693036, -1363.477006, 136.554515, 0, 0, 0 ],
+        [ 19111.872975, 628.006866, 125.480624, 0, -90, 0 ],
+        [ 19111.872975, 628.006866, 125.480624, 0, -90, 0 ],
+        [19100.089448,-1742.633123,82.049053,0,90,0]
+      ],
+      "injured_player_loc": [
+        [ 21345.519887, -1475.601186, 98.692766, 0, -30, 0 ],
+        [ 19955.694408, 322.772846, 99.010617, 0, -30, 0 ],
+        [ 18611.353808, -6060.664827, 95.253759, 0, 0, 0 ],
+        [ 16262.345856, -111.886158, 102.951323, 0, 0, 0 ],
+        [ 18549.30392, -2671.60913, 98.459956, 0, 100, 0 ],
+        [17427.924982,-59.000000,98.654839,0,90,0]
+
+
+      ],
+      "stretcher_loc": [
+        [ 19365.815029, -2082.899389, -10.000008, 0, 0, 0 ],
+        [ 19365.815029, -2082.899389, -10.000008, 0, 0, 0 ],
+        [ 19532.683978, -699.663071, -10.000007, 0, 0, 0 ],
+        [ 19532.683978, -699.663071, -10.000007, 0, 0, 0 ],
+        [ 19532.683978, -699.663071, -10.000007, 0, 0, 0 ],
+        [18982.326493,-607.080988,-10.000000,0,0,0]
+
+      ],
+      "ambulance_loc": [
+        [ 19534.215312, -2522.484504, -12.614722, 0, 90, 0 ],
+        [ 19534.215312, -2522.484504, -12.614722, 0, 90, 0 ],
+        [ 19982.035386, -694.886116, -12.614714, 0, 0, 0 ],
+        [ 19982.035386, -694.886116, -12.614714, 0, 0, 0 ],
+        [ 19982.035386, -694.886116, -12.614714, 0, 0, 0 ],
+        [19242.414509,-607.080988,-9.453911,0,90,0]
+      ],
+      "reference_text": [
+        [ "The injured person is lying in front of your street, near a beauty salon and a street post office. You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured person is on the street edge after turning left at the intersection in front of you,near a beauty salon. You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured person is on the street edge to your left,near an aquarium . You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured woman is on a street edge after turning left at the intersection ahead,next to two phone booths and a street post office.You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured person is on a certain street edge in front of you,near the fish stall and the telephone booth. You need to find the person, carry the person to the ambulance stretcher." ],
+        ["The injured woman is on the street perpendicular to your current road，next to a big green box and seafood shop. You need to find the woman, carry her to the ambulance stretcher."]
+      ],
+      "reference_image_path": [
+        [ "HongKongStreet_level_3_0.png" ],
+        [ "HongKongStreet_level_3_1.png" ],
+        [ "HongKongStreet_level_3_2.png" ],
+        [ "HongKongStreet_level_3_3.png" ],
+        [ "HongKongStreet_level_3_4.png" ],
+        [ "HongKongStreet_level_3_5.png" ]
+      ]
+    },
+    "level_4": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        7,
+        8
+      ],
+      "agent_loc": [
+        [ 17993.941488, -630.768667, 125.480636, 0, 0, 0 ],
+        [ 17476.216081, -630.768667, 125.480636, 0, 0, 0 ],
+        [ 19270.200102, 1143.827941, 125.480628, 0, -90, 0 ],
+        [ 17531.143395, -780.441695, 130.132591, 0, 0, 0 ],
+        [ 19100.089448,-2085.130767,126.496208, 0, 90, 0 ],
+        [19100.089448,-1621.333548,82.049053,0,90,0],
+        [19205.000759,-1742.633123,82.049053,0,90,0],
+        [17180.643129,-756.959789,82.107039,0,0,0]
+      ],
+      "injured_player_loc": [
+        [ 20225.785156, -6500.206386, 93.053771, 0, -90, 0 ],
+        [ 19924.977513, -7818.690206, 96.682736, 0, 0, 0 ],
+        [ 21472.113452, -1769.158140, 98.859555, 0, 180, 0 ],
+        [ 19862.194165, -3689.352252, 98.459957, 0, 0, 0 ],
+        [ 18836.258847, -3689.352252, 95.555874, 0, 90, 0 ],
+        [15995.858695,-59.494446,98.654852,0,90,0],
+        [16257.165157,-1544.831787,97.999997,0,-90,0],
+        [18535.570312,540.042757,95.000000,0,180,0]
+
+      ],
+      "stretcher_loc": [
+        [ 19532.683978, -699.663071, -10.000007, 0, 0, 0 ],
+        [ 19312.636497, -1359.957161, -10.000006, 0, 90, 0 ],
+        [ 18178.59375, -945.65155, -10.000031, 0, 60, 0 ],
+        [ 18178.59375, -945.65155, -10.000031, 0, 60, 0 ],
+        [ 18936.925989,-607.080988,-15.051612, 0, 0, 0 ],
+        [18982.326493,-607.080988,-10.000031,0,0,0],
+        [18982.326493,-607.080988,-10.000031,0,0,0],
+        [18982.326493,-607.080988,-10.000031,0,0,0]
+
+      ],
+      "ambulance_loc": [
+        [ 19982.035386, -694.886116, -12.614714, 0, 0, 0 ],
+        [ 19449.593958, -1771.345629, -12.614717, 0, 90, 0 ],
+        [ 17648.109297, -975.895034, -12.614721, 0, 0, 0 ],
+        [ 17648.109297, -975.895034, -12.614721, 0, 0, 0 ],
+        [ 19242.414509,-607.080988,-24.522931, 0, 90, 0 ],
+        [19242.414509,-607.080988,-9.453911,0,90,0],
+        [19242.414509,-607.080988,-9.453911,0,90,0],
+        [19242.414509,-607.080988,-9.453911,0,90,0]
+      ],
+      "reference_text": [
+        [ "There is an injured woman lying in an alley on a street perpendicular to the one you are currently on. You need to find her, carry her to the ambulance stretcher." ],
+        [ "There is an injured woman lying at the corner of a street perpendicular to the one you are currently on. You need to find her, carry her to the ambulance stretcher." ],
+        [ "There is an injured woman lying in an alley on the street at the intersection in front of you. You need to find her, carry her to the ambulance stretcher." ],
+        [ "The injured person is on the street perpendicular to your current road. You need to find the person, carry the person to the ambulance stretcher." ],
+        [ "The injured person is on the street perpendicular to your current road. You need to find the person, carry the person to the ambulance stretcher." ],
+        ["The injured woman is on the street perpendicular to your current road. You need to find woman, carry her to the ambulance stretcher."],
+        ["The injured man is on the street perpendicular to your current road. You need to find man, carry him to the ambulance stretcher."],
+        ["The injured man is on the street perpendicular to your current road. You need to find man, carry him to the ambulance stretcher."]
+
+      ],
+      "reference_image_path": [
+        [ "HongKongStreet_level_4_0.png" ],
+        [ "HongKongStreet_level_4_1.png" ],
+        [ "HongKongStreet_level_4_2.png" ],
+        [ "HongKongStreet_level_4_3.png" ],
+        [ "HongKongStreet_level_4_4.png" ],
+        [ "HongKongStreet_level_4_5.png" ],
+        [ "HongKongStreet_level_4_6.png" ],
+        [ "HongKongStreet_level_4_7.png" ]
+      ]
+    }
+  },
+    "obj_num": 2263
+}

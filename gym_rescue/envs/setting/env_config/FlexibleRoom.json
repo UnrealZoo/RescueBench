@@ -1,0 +1,405 @@
+{
+  "env_name": "FlexibleRoom",
+  "env_map": "FlexibleRoom",
+  "env_bin":{
+    "Linux": "Rescue_Linux/Linux/Rescue/Binaries/Linux/Rescue",
+    "Win": "Rescue_Win64_v1.0.8\\Rescue\\Binaries\\Win64\\Rescue.exe",
+    "Mac":  "Rescue_Mac/Rescue.app"
+  },
+  "third_cam": {
+    "cam_id": 0,
+    "pitch": -90,
+    "yaw": 0,
+    "roll": 0,
+    "height_top_view": 1248.121,
+    "fov": 90
+  },
+  "height": 248.121,
+  "interval": 1000,
+  "agents": {
+    "player": {
+      "name": [
+        "BP_Character_C_1"
+      ],
+      "cam_id": [
+        1
+      ],   
+      "class_name": [
+        "bp_character_C"
+      ],
+      "internal_nav": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "relative_location": [
+        20,
+        0,
+        0
+      ],
+      "relative_rotation": [
+        0,
+        0,
+        0
+      ],
+      "head_action_continuous": {
+        "high": [
+          15,
+          15,
+          15
+        ],
+        "low": [
+          -15,
+          -15,
+          -15
+        ]
+      },
+      "head_action": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          -30,
+          0
+        ]
+      ],
+      "animation_action": [
+        "stand",
+        "jump",
+        "crouch",
+        "carry",
+        "drop",
+        "open_door"
+
+      ],
+      "move_action": [
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          -100
+        ],
+        [
+          15,
+          50
+        ],
+        [
+          -15,
+          50
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          -30,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "move_action_continuous": {
+        "high": [
+          30,
+          100
+        ],
+        "low": [
+          -30,
+          -100
+        ]
+      }
+    }
+  },
+  "safe_start": [
+    [
+      -40.0,
+      40.0,
+      248.121
+    ],
+    [
+      270.039,
+      748.099,
+      152.522
+    ],
+    [
+      1073.629,
+      588.119,
+      152.522
+    ],
+    [
+      -206.458,
+      -575.907,
+      152.522
+    ],
+    [
+      -1660.508,
+      283.167,
+      152.522
+    ],
+    [
+      427.732,
+      1387.053,
+      152.522
+    ],
+    [
+      980.604,
+      328.554,
+      152.522
+    ],
+    [
+      -2017.654,
+      -176.196,
+      152.522
+    ],
+    [
+      733.853,
+      1176.042,
+      152.522
+    ],
+    [
+      715.544,
+      -489.436,
+      152.522
+    ],
+    [
+      367.994,
+      743.485,
+      152.522
+    ]
+  ],
+  "reset_area": [
+    -2017.654,
+    1073.629,
+    -575.907,
+    1387.053,
+    152.522,
+    248.121
+  ],
+  "random_init": false,
+  "env": {
+    "interactive_door": [],
+    "injured_player": [
+      "BP_Enemy_Character_C_1"
+    ],
+    "stretcher": [
+      "StaticMeshActor_1"
+    ],
+    "ambulance": [
+      "BP_Drivable_Ambulance01_C_1"
+    ],
+    "level_0": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        10,
+        14,
+        13,
+        3,
+        9,
+        3,
+        9,
+        10,
+        13,
+        14
+      ],
+      "agent_loc": [
+        [ 150, -180, 191, 0, -50, 0 ],
+        [ -320, 740, 191, 0, 20, 0 ],
+        [ -810, 740, 191, 0, 180, 0 ],
+        [ 0, 0, 191, 0, 50, 0 ],
+        [ -23, 19, 190, 0, 0, 0 ],
+        [ -342, 89, 190, 0, 30, 0 ],
+        [ -237, -142, 190, 0, -90, 0 ],
+        [ -237, 377, 190, 0, -90, 0 ],
+        [ -807, 377, 190, 0, -90, 0 ],
+        [ -227, -242, 190, 0, -90, 0 ],
+        [ -277, -242, 190, 0, -90, 0 ],
+        [ -277, 897, 190, 0, 0, 0 ],
+        [ -777, 1257, 190, 0, 90, 0 ],
+        [ -1627, 1257, 190, 0, 180, 0 ],
+        [ -1087, 1257, 190, 0, 0, 0 ],
+        [ -1207.981333, 1037.418293, 190.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -817.981333, 637.418293, 190.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -1007.981333, 637.418293, 190.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -1437.981333, 187.418293, 190.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1067.981333, 317.418293, 190.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 587.026512, -102, 190, 0, -90, 0 ],
+        [ -1007.708301, -867, 190, 0, 0, 0 ],
+        [ -600.464806, -867, 190, 0, 180, 0 ],
+        [ 626.216061, -372, 190, 0, -90, 0 ],
+        [ 626.216061, -372, 190, 0, -90, 0 ]
+      ],
+      "injured_player_loc": [
+        [ 160.0, -339, 193.15, 0.0, 0.0, 0.0 ],
+        [ 260.0, -339, 193.15, 0.0, 0.0, 0.0 ],
+        [ -1430, 980, 200, 0, 0, 0 ],
+        [ 250, -339, 193, 0, 0, 0 ],
+        [ 300, -249, 193, 0, 0, 0 ],
+        [ 10, -269, 193, 0, 0, 0 ],
+        [ 10, 91, 193, 0, 0, 0 ],
+        [ 90, 91, 193, 0, 0, 0 ],
+        [ -239, 251, 193, 0, 0, 0 ],
+        [ -180, 252, 193, 0, 0, 0 ],
+        [ -330, 251, 193, 0, 0, 0 ],
+        [ -690, 861, 193, 0, 0, 0 ],
+        [ -760, 861, 193, 0, 0, 0 ],
+        [ -1300, 1371, 193, 0, 0, 0 ],
+        [ -1340, 1341, 193, 0, 0, 0 ],
+        [ -1290.000000, 571.000000, 193.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1290.000000, 151.000000, 193.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -990.000000, 151.000000, 193.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -870.000000, 251.000000, 193.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -970.000000, 691.000000, 193.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 1219.663135, -1069.743683, 193.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -376.485187, -1208, 193, 0, 90, 0 ],
+        [ 241.194965, -164, 193, 0, 0, 0 ],
+        [ 121.770876, -970, 193, 0, 0, 0 ],
+        [ -20.359234, -1376, 193, 0, 0, 0 ]
+        
+      ],
+      "stretcher_loc": [
+        [ 570, -1470, 100, 0, -10.0, 0.0 ],
+        [ 480, -1470, 100, 0, 0, 0 ],
+        [ -100, 1040, 100, 0, 0, 0 ],
+        [ 570, -640, 100, 0, 0, 0 ],
+        [ 520, -730, 100, 0, 0, 0 ],
+        [ 520, -523, 100, 0, 0, 0 ],
+        [ 500, 160, 100, 0, 0, 0 ],
+        [ 500, 10, 100, 0, 0, 0 ],
+        [ 420, 350, 100, 0, 0, 0 ],
+        [ 210, 350, 100, 0, 0, 0 ],
+        [ -710, 350, 100, 0, 0, 0 ],
+        [ -1100, 630, 100, 0, 0, 0 ],
+        [ -1100, 630, 100, 0, 0, 0 ],
+        [ -1000, 1020, 100, 0, 0, 0 ],
+        [ -1680, 880, 100, 0, 0, 0 ],
+        [ -1680.000000, 260.000000, 100.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1660.000000, 260.000000, 100.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1430.000000, -210.000000, 100.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1050.000000, -210.000000, 100.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1050.000000, -210.000000, 100.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 570, -1470, 100, 0, -10.0, 0.0 ],
+        [ 570, -1470, 100, 0, -10.0, 0.0 ],
+        [ 570, -1470, 100, 0, -10.0, 0.0 ],
+        [ 570, -1470, 100, 0, -10.0, 0.0 ],
+        [ 570, -705.621918 ,100,0,-10,0]
+      ],
+      "ambulance_loc": [
+        [ 940, -1630, 90, 0, 130, 0 ],
+        [ 950, 910, 90, 0, 130, 0 ],
+        [ 240, 680, 90, 0, 0, 0 ],
+        [ 881, -967, 90, 0, 90, 0 ],
+        [ 751, -967, 90, 0, 90, 0 ],
+        [ 751, -667, 90, 0, 90, 0 ],
+        [ 711, 362, 90, 0, 90, 0 ],
+        [ 711, 122, 90, 0, 90, 0 ],
+        [ 651, 482, 90, 0, 90, 0 ],
+        [ 431, 492, 90, 0, 90, 0 ],
+        [ -900, 428, 90, 0, 90, 0 ],
+        [ -1270, 572, 90, 0, 90, 0 ],
+        [ -1270, 572, 90, 0, 90, 0 ],
+        [ -800, 962, 90, 0, 90, 0 ],
+        [ -1840, 972, 90, 0, 90, 0 ],
+        [ -1840.000000, 312.149115, 90.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1840.000000, 312.149115, 90.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1440.000000, -457.850885, 90.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1030.000000, -457.850885, 90.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1030.000000, -457.850885, 90.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 940, -1630, 90, 0, 130, 0 ],
+        [ 940, -1630, 90, 0, 130, 0 ],
+        [ 940, -1630, 90, 0, 130, 0 ],
+        [ 940, -1630, 90, 0, 130, 0 ],
+        [ 940, -1026.577815 , 90, 0,130,0]
+      ],
+      "reference_text": [
+        [ "There is a man injured lying on the ground in front of you,with a yellow stretcher in front of the man. You need to find the man, carry the man to the ambulance stretcher." ],
+        [ "There is a man injured lying on the ground in front of you,with a yellow stretcher in front of the man. You need to find the man, carry the man to the ambulance stretcher." ],
+        [ "There is a man injured lying on the ground in front of you,with a yellow stretcher in front of the man. You need to find the man, carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your left, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your left, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your left, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your right, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your right, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your right, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying behind you, with a yellow stretcher in front of the man.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying behind you, with a yellow stretcher in front of the man.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying behind you, with a yellow stretcher in front of the man.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying behind you, with a yellow stretcher not far to the left of the man.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying behind you, with a yellow stretcher not far to the left of the man.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying behind you, with a yellow stretcher not far to the right of the man.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is a woman injured lying on the ground in front of you, with a yellow stretcher not far from her.You need to find the woman,carry the womman to the ambulance stretcher." ],
+        [ "There is a man injured lying on the ground in front of you on your left, with a yellow stretcher not far from him.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is a man injured lying on the ground in front of you, with a yellow stretcher not far from him.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is a woman injured lying on the ground in front of you on your right, with a yellow stretcher not far from her.You need to find the woman,carry the womman to the ambulance stretcher." ],
+        [ "There is a woman injured lying on the ground in front of you , with a yellow stretcher not far from her.You need to find the woman,carry the womman to the ambulance stretcher." ],
+        [ "There is an injured man in front of you and a yellow stretcher behind you.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is a woman injured lying on the ground in front of you on your right, with a yellow stretcher not far from her.You need to find the woman,carry the womman to the ambulance stretcher." ],
+        [ "There is an injured man in front of you and a yellow stretcher in front of you.You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is a male injured person lying behind you on the left side and a yellow stretcher behind you on the right side. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is an injured man lying in front of you on your left, with a yellow stretcher in front of the man. You need to find the man,carry the man to the ambulance stretcher." ],
+        [ "There is a man injured lying on the ground in front of you, with a yellow stretcher not far from him.You need to find the man,carry the man to the ambulance stretcher." ]
+      ],
+      "reference_image_path": [
+        [ "track_train_level_0_0.png" ],
+        [ "track_train_level_0_1.png" ],
+        [ "track_train_level_0_2.png" ],
+        [ "track_train_level_0_3.png" ],
+        [ "track_train_level_0_4.png" ],
+        [ "track_train_level_0_5.png" ],
+        [ "track_train_level_0_6.png" ],
+        [ "track_train_level_0_7.png" ],
+        [ "track_train_level_0_8.png" ],
+        [ "track_train_level_0_9.png" ],
+        [ "track_train_level_0_10.png" ],
+        [ "track_train_level_0_11.png" ],
+        [ "track_train_level_0_12.png" ],
+        [ "track_train_level_0_13.png" ],
+        [ "track_train_level_0_14.png" ],
+        [ "track_train_level_0_15.png" ],
+        [ "track_train_level_0_16.png" ],
+        [ "track_train_level_0_17.png" ],
+        [ "track_train_level_0_18.png" ],
+        [ "track_train_level_0_19.png" ],
+        [ "track_train_level_0_20.png" ],
+        [ "track_train_level_0_21.png" ],
+        [ "track_train_level_0_22.png" ],
+        [ "track_train_level_0_23.png" ],
+        [ "track_train_level_0_24.png" ]
+      ]
+    }
+  },
+  "obj_num": 84,
+  "size": 780.9152000000003,
+  "area": 1952.288,
+  "bbox": [
+    49.4,
+    39.52,
+    0.40000000000000013
+  ]
+}

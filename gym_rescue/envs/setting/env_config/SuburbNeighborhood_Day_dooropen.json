@@ -1,0 +1,1704 @@
+{
+  "env_name": "SuburbNeighborhood_Day_dooropen",
+  "env_map": "SuburbNeighborhood_Day_dooropen",
+  "env_bin":{
+    "Linux": "Rescue_Linux_1.0.9/Linux/Rescue/Binaries/Linux/Rescue",
+    "Win": "Rescue_Win64_v1.0.2\\Rescue\\Binaries\\Win64\\Rescue.exe",
+    "Mac":  "Rescue_Mac/Rescue.app"
+  },
+  "third_cam": {
+    "cam_id": 0,
+    "pitch": -90,
+    "yaw": 0,
+    "roll": 0,
+    "height_top_view": 1105.0,
+    "fov": 90
+  },
+  "height": 105.0,
+  "interval": 1000,
+  "agents": {
+    "player": {
+      "name": [
+        "BP_Character_C_1"
+      ],
+      "cam_id": [
+        1
+      ],
+      "class_name": [
+        "bp_character_C"
+      ],
+      "internal_nav": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "relative_location": [
+        20,
+        0,
+        0
+      ],
+      "relative_rotation": [
+        0,
+        0,
+        0
+      ],
+      "head_action_continuous": {
+        "high": [
+          15,
+          15,
+          15
+        ],
+        "low": [
+          -15,
+          -15,
+          -15
+        ]
+      },
+      "head_action": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          -30,
+          0
+        ]
+      ],
+      "animation_action": [
+        "stand",
+        "jump",
+        "crouch",
+        "carry",
+        "drop",
+        "open_door"
+      ],
+      "move_action": [
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          -100
+        ],
+        [
+          15,
+          50
+        ],
+        [
+          -15,
+          50
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          -30,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "move_action_continuous": {
+        "high": [
+          30,
+          100
+        ],
+        "low": [
+          -30,
+          -100
+        ]
+      }
+    }
+  },
+  "safe_start": [
+    [
+      620.0,
+      -179.984,
+      98.15
+    ],
+    [
+      620.0,
+      -893.0,
+      85.0
+    ],
+    [
+      -659.509,
+      -1699.232,
+      105.0
+    ],
+    [
+      617.125,
+      1152.878,
+      96.57
+    ],
+    [
+      2052.965,
+      131.722,
+      77.203
+    ],
+    [
+      -1106.868,
+      -300.547,
+      55.0
+    ],
+    [
+      1522.998,
+      57.656,
+      61.452
+    ],
+    [
+      -611.452,
+      -67.152,
+      56.178
+    ],
+    [
+      1562.869,
+      -418.475,
+      65.641
+    ],
+    [
+      1277.561,
+      425.854,
+      69.134
+    ],
+    [
+      1074.386,
+      692.59,
+      75.0
+    ]
+  ],
+  "reset_area": [
+    -1106.868,
+    2052.965,
+    -1699.232,
+    1152.878,
+    55.0,
+    105.0
+  ],
+  "random_init": false,
+  "env": {
+    "interactive_door": [
+      "BP_Door_main10",
+      "BP_Door_main11",
+      "BP_Door_main12",
+      "BP_Door_main13",
+      "BP_Door_main14",
+      "BP_Door_main15",
+      "BP_Door_main16",
+      "BP_Door_main17",
+      "BP_Door_main18",
+      "BP_Door_main19",
+      "BP_Door_main2",
+      "BP_Door_main20",
+      "BP_Door_main21",
+      "BP_Door_main22",
+      "BP_Door_main23_18",
+      "BP_Door_main24",
+      "BP_Door_main25",
+      "BP_Door_main26",
+      "BP_Door_main27",
+      "BP_Door_main3_2",
+      "BP_Door_main4",
+      "BP_Door_main5",
+      "BP_Door_main6_5",
+      "BP_Door_main7_2",
+      "BP_Door_main8_5",
+      "BP_Door_main9_2",
+      "BP_Door_main_1",
+      "BP_Door_garage2_5",
+      "BP_Door_garage3_5",
+      "BP_Door_garage4_9",
+      "BP_Door_garage_14"
+    ],
+    "injured_player": [
+      "BP_Enemy_Character_C_1"
+    ],
+    "stretcher": [
+      "StaticMeshActor_1"
+    ],
+    "ambulance": [
+      "BP_Drivable_Ambulance01_C_1"
+    ],
+    "level_1": {
+      "injured_agent_id": [
+        0,
+        11,
+        1,
+        9,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        2,
+        0,
+        9,
+        11
+      ],
+      "agent_loc": [
+        [
+          620,
+          -179,
+          77,
+          0,
+          0,
+          0
+        ],
+        [
+          1030,
+          -539,
+          77,
+          0,
+          20,
+          0
+        ],
+        [
+          1820,
+          10,
+          77,
+          0,
+          141,
+          0
+        ],
+        [
+          1511,
+          10,
+          77,
+          0,
+          -108,
+          0
+        ],
+        [
+          -2082.402974,
+          -90.116918,
+          154.444751,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1815.713445,
+          -169.155582,
+          154.444748,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -1351.129023,
+          -78.369655,
+          154.444733,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1000.759078,
+          80.000000,
+          143.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -2230.000000,
+          1250.000000,
+          163.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -1788.000000,
+          630.000000,
+          141.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -2530.923096,
+          -172.226074,
+          102.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -3150.923096,
+          -212.226074,
+          102.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -2370.923096,
+          547.773926,
+          110.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -2560.923096,
+          -650.000000,
+          130.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          252.409851,
+          -964.890961,
+          145.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [ -825.113711, 80, 140, 0, 0, 0 ],
+        [ -1060.257384, 80, 140, 0, 30, 0 ],
+        [ -186.528778, 80, 140, 0, 180, 0 ],
+        [ -1107.375458, 142, 140, 0, 90, 0 ],
+        [ 244.5142, 337, 140, 0, -90, 0 ]
+      ],
+      "injured_player_loc": [
+        [
+          2247,
+          45,
+          113,
+          0,
+          0,
+          0
+        ],
+        [
+          1777,
+          -304,
+          113,
+          0,
+          0,
+          0
+        ],
+        [
+          1406,
+          488,
+          143,
+          0,
+          -60,
+          0
+        ],
+        [
+          1156,
+          -1262,
+          149,
+          0,
+          -50,
+          0
+        ],
+        [
+          -688.882764,
+          -647.461008,
+          104.491054,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -3051.039507,
+          -477.127583,
+          110.003558,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          58.741269,
+          628.81948,
+          112.597023,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -3362.161133,
+          16.054700,
+          99.949768,
+          0.000000,
+          60.000000,
+          0.000000
+        ],
+        [
+          -2224.725955,
+          504.975586,
+          105.000000,
+          0.000000,
+          60.000000,
+          0.000000
+        ],
+        [
+          -1199.375854,
+          657.205032,
+          116.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -2603.059814,
+          -668.607971,
+          113.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -3183.059814,
+          -628.607971,
+          113.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -2225.636963,
+          1054.630249,
+          140.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -2590.029462,
+          -1400.000000,
+          165.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          240.000000,
+          -1500.000000,
+          170.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [ 248.704939, -504, 104.133747, 0, 90, 0 ],
+        [ -386.555849, 658, 115.597023, 0, 0, 0 ],
+        [ -1177.749748, -522, 100, 0, 90, 0 ],
+        [ -1176.899546, 1074, 125, 0, 90, 0 ],
+        [ -116.449827, -1316, 147, 0, 90, 0 ]
+      ],
+      "stretcher_loc": [
+        [
+          1440,
+          250,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          610,
+          180,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          610,
+          50,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          540,
+          -30,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          -1064.600202,
+          191.447959,
+          0,
+          0.0,
+          90.0,
+          0.0
+        ],
+        [
+          -1243.265396,
+          90.475898,
+          0,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -1260.879753,
+          -410.85313,
+          0,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -3292.951605,
+          -589.342301,
+          11.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -1732.951605,
+          180.657699,
+          0.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -712.951605,
+          180.657699,
+          0.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -2013.313965,
+          -183.679932,
+          -0.033905,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -2613.313965,
+          -183.679932,
+          -0.033905,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -2513.313965,
+          36.320068,
+          -0.033905,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -2513.313965,
+          -183.679932,
+          -0.033905,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          146.686035,
+          -243.679932,
+          -0.033905,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [ 525.950667, 116, 0, 0, 0, 0 ],
+        [ 525.950667, 116, 0, 0, 0, 0 ],
+        [ 525.950667, 116, 0, 0, 0, 0 ],
+        [ 525.950667, 116, 0, 0, 0, 0 ],
+        [ 525.950667, 116, 0, 0, 0, 0 ]
+      ],
+      "ambulance_loc": [
+        [
+          950,
+          130,
+          0,
+          0,
+          180,
+          0
+        ],
+        [
+          190,
+          130,
+          0,
+          0,
+          180,
+          0
+        ],
+        [
+          190,
+          130,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          190,
+          -210,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1524.793007,
+          147.211669,
+          0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -1755.733213,
+          147.211669,
+          0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -1935.404492,
+          -363.085621,
+          0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -3292.951605,
+          -889.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -1532.951605,
+          -89.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -582.951605,
+          -89.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -1932.951605,
+          0.657699,
+          0.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -2572.951605,
+          0.657699,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -2572.951605,
+          -209.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -2572.951605,
+          50.657699,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          60.000000,
+          -39.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [ 920.863965, 38, 0, 0, 0, 0 ],
+        [ 920.863965, 38, 0, 0, 0, 0 ],
+        [ 920.863965, 38, 0, 0, 0, 0 ],
+        [ 920.863965, 38, 0, 0, 0, 0 ],
+        [ 920.863965, 38, 0, 0, 0, 0 ]
+      ],
+      "reference_text": [
+        [
+          "A female in a shirt and blue jeans lies injured on the grass near a sidewalk in front of a gray - sided house with a white picket fence and American flags on the porch.  She is in front of you. Beside you are the ambulance and stretcher parked on the street. You need to find the person, carry the person to the ambulance stretcher."
+        ],
+        [
+          "A male dressed in a white shirt and black pants is injured and lying on his back in the middle of a residential street near concrete barriers with yellow stripes, close to a house with a white picket fence. He is in front of you. Beside you are the ambulance and stretcher parked on the street.You need to find the person, carry the person to the ambulance stretcher."
+        ],
+        [
+          "An injured male in a military green jacket and white pants lay next to a mailbox on the lawn beside the sidewalk, where a gray-walled, white-fenced house had an American flag on its porch. Beside you are the ambulance and stretcher parked on the street. You need to find this person and get him onto the stretcher in the ambulance."
+        ],
+        [
+          "There is a male injured lying on the ground in front of you.He dressed in a blue shirt and black pants is injured and lying on his back on a driveway in front of a gray - sided house with a brown garage door. The driveway is lined with grass and a few bushes, and there are some shadows of trees on the ground nearby.Beside you are the ambulance and stretcher parked on the street.You need to find the person, carry the person to the ambulance stretcher."
+        ],
+        [
+          "The injured person is a male wearing a white shirt and blue pants. He is lying on the road to your left front, near a white car and some bushes by the roadside. There are houses with gray siding and white picket fences in the background, along with trees and a sidewalk. Beside you are the ambulance and stretcher parked on the street.Please find this person and carry him to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is a female wearing a shirt and blue pants. She is lying on the sidewalk to your right front, near a mailbox and some grass. There is a house with a white garage door and a red door in the background, along with some trees and bushes. Beside you are the ambulance and stretcher parked on the street.Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is a female agent wearing a shirt and blue pants. She is lying on the sidewalk to your right front, near a red car and a black trash can. There is a house in the background with a white garage door and a red front door, surrounded by trees and bushes. Beside you are the ambulance and stretcher parked on the street.Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "In the middle of the street in front of you, lies an injured person, surrounded by roadblocks and a trash bin nearby. The injured person is a female wearing a light blue plaid shirt and blue jeans. There is a red car parked on the side of the street, and some trees and houses in the background.Beside you are the ambulance and stretcher parked on the street. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "On the road in front of you, lies an injured person, lying beside the street with a trash bin next to her. The injured person is a female wearing a white shirt and dark pants. There is a building across the road, and some trees and bushes in the background. The agent is not directly in front of the building but is close to it. Beside you are the ambulance and stretcher parked on the street. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is lying on the sidewalk of the small road in front of you, in a suburban neighborhood, surrounded by a picket fence and houses. The injured person is a female wearing a white shirt and blue pants. There is a white picket fence and a house in the background, along with some trees and bushes. Beside you are the ambulance and stretcher parked on the street.Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [ "There is a woman injured lying on the sidewalk in front of a house. She is wearing a floral shirt, blue jeans, and boots. She is lying not far to your left. To the left, there is a U.S. mailbox. On the right, a white picket fence runs along the sidewalk. Green bushes and plants surround the walkway. A tree stands beside the path, slightly leaning towards it. The house is visible in the background, with a porch and windows. Please find her and carry her to the yellow ambulance stretcher. The stretcher is located on the road directly ahead of you." ],
+        [ "There is a woman injured lying on the sidewalk in front of a house. She is wearing a floral shirt, blue jeans, and boots. She is lying not far to your left. To the left, there is a stop sign and a red car parked in the background. A wooden fence runs along the side of the yard, and green bushes and plants are scattered around the walkway. The house with a garage is visible behind her. Please find her and carry her to the yellow ambulance stretcher. The stretcher is located on the road directly ahead of you." ],
+        [ "There is a woman injured lying on the sidewalk in front of a house. She is wearing a floral shirt, blue jeans, and boots. She is lying not far to your right. There are black-and-white poles along the path, and flowers are planted beside the walkway. A white picket fence runs along the left side, and a porch with two chairs is visible to the left. The house has a garage with a brown door. Please find her and carry her to the yellow ambulance stretcher. The stretcher is located on the road to your left." ],
+        [ "There is a woman injured lying on the sidewalk in front of a house, on the porch near the red door. She is wearing a floral shirt, blue jeans, and boots. She is lying not far to your right. The porch has two planters with plants, and the walkway is bordered with grass and bushes. The house has a garage door visible to the left. Please find her and carry her to the yellow ambulance stretcher. The stretcher is located on the road to your left." ],
+        [ "There is a man injured lying on the sidewalk in front of a house. He is wearing a green shirt, dark green jeans, and black boots. He is lying not far to your left. The house has a porch with planters and a wooden floor. There are bushes and flowers along the walkway and near the house. A light fixture is mounted on the wall next to the door, and there are two windows visible. Please find him and carry him to the yellow ambulance stretcher. The stretcher is located on the road to your right." ],
+        [ "There is a male injured person wearing a military green shirt and white pants lying in front of your left side. There are some bushes, a mailbox, and a trash can around this man. Please find him and carry him to the yellow ambulance stretcher. The stretcher is in front of you." ],
+        [ "There is a man injured wearing a green shirt and military green pants lying in front of you, surrounded by some grass and a red car. Please find him and carry him to the yellow ambulance stretcher. The stretcher is in front of you." ],
+        [ "A wounded woman wearing a light floral top and blue jeans is lying in front of you on your right. She was lying on the road, surrounded by a white car.Please find her and carry her to the yellow ambulance stretcher. The stretcher is behind you." ],
+        [ "There is a man injured wearing a dark blue shirt and black pants lying in front of you in the garden of this building, surrounded by a white fence. Please find him and carry him to the yellow ambulance stretcher. The stretcher is on your left. Please find him and carry him to the yellow ambulance stretcher near you." ],
+        [ "There is a man wearing a white shirt and black pants lying in front of you in the garden of this building, surrounded by some flowers and plants" ]
+      ],
+      "reference_image_path": [
+        [
+          "SuburbNeighborhood_Day_level_1_0.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_1.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_2.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_3.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_4.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_5.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_6.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_7.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_8.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_9.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_10.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_11.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_12.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_13.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_1_14.png"
+        ],
+        [ "SuburbNeighborhood_Day_level_1_15.png" ],
+        [ "SuburbNeighborhood_Day_level_1_16.png" ],
+        [ "SuburbNeighborhood_Day_level_1_17.png" ],
+        [ "SuburbNeighborhood_Day_level_1_18.png" ],
+        [ "SuburbNeighborhood_Day_level_1_19.png" ]
+      ]
+    },
+    "level_2": {
+      "injured_agent_id": [
+        5,
+        15,
+        14,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "agent_loc": [
+        [
+          620,
+          -179,
+          77,
+          0,
+          0,
+          0
+        ],
+        [
+          178,
+          -179,
+          77,
+          0,
+          0,
+          0
+        ],
+        [
+          -1807,
+          -269,
+          77,
+          0,
+          0,
+          0
+        ],
+        [
+          -1351.129023,
+          -78.369655,
+          154.444733,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -3409.659276,
+          29.028537,
+          154.444733,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.717852,
+          -173.459427,
+          154.444795,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1931.000000,
+          306.000000,
+          122.000000,
+          0.000000,
+          0.000000,
+          0.000000
+        ],
+        [
+          -1458.000000,
+          860.000000,
+          160.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -289.000000,
+          330.000000,
+          140.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [ 252.409851, -964.890961, 145.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -2541.712158, -602.997986, 140.000000, 0.000000, 30.000000, 0.000000 ],
+        [ -1404.375854, -120.019287, 102.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -1444.375854, 349.980713, 92.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -2434.375854, 709.980713, 107.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -2544.375854, -1050.019287, 160.000000, 0.000000, -90.000000, 0.000000 ]
+      ],
+
+
+      "injured_player_loc": [
+        [
+          3097,
+          -1675,
+          136,
+          0,
+          30,
+          0
+        ],
+        [
+          1747,
+          -1245,
+          156,
+          0,
+          -50,
+          0
+        ],
+        [
+          -179,
+          1114,
+          156,
+          0,
+          150,
+          0
+        ],
+        [
+          -516.579174,
+          1302.237149,
+          151.690154,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -1927.643536,
+          -1182.190308,
+          134.513434,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          1886.637219,
+          1101.956842,
+          138.146286,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -1079.375854,
+          927.205032,
+          126.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -1079.375854,
+          1407.205032,
+          166.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [
+          -420.000015,
+          1279.999756,
+          156.000000,
+          0.000000,
+          90.000000,
+          0.000000
+        ],
+        [ -480.000000, -1500.000000, 170.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -2040.000000, -1390.000000, 160.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1119.010254, -1111.149658, 122.581505, 0.000000, 90.000000, 0.000000 ],
+        [ -1745.636963, 1054.630249, 143.589378, 0.000000, 90.000000, 0.000000 ],
+        [ -2921.615234, 1238.341309, 153.845726, 0.000000, 90.000000, 0.000000 ],
+        [ -3190.000000, -1390.000000, 160.000000, 0.000000, 90.000000, 0.000000 ]
+      ],
+      "stretcher_loc": [
+        [
+          1440,
+          250,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          1440,
+          250,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          -1260,
+          -340,
+          0,
+          0,
+          30,
+          0
+        ],
+
+        [
+          -1260.879753,
+          -410.85313,
+          0.0,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -1550.197492,
+          -57.437639,
+          0.0,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          121.551075,
+          95.008465,
+          0.0,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          -712.951605,
+          180.657699,
+          0.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -1332.951605,
+          180.657699,
+          0.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [
+          -892.951605,
+          120.657699,
+          0.000000,
+          0.000000,
+          -90.000000,
+          0.000000
+        ],
+        [ 266.686035, -323.679932, -0.033905, 0.000000, -90.000000, 0.000000 ],
+        [ -2313.313965, -323.679932, -0.033905, 0.000000, -90.000000, 0.000000 ],
+        [ -1993.313965, -203.679932, -0.033905, 0.000000, 0.000000, 0.000000 ],
+        [ -1573.313965, -53.679932, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ -2283.313965, 216.320068, -0.033905, 0.000000, -179.999954, 0.000000 ],
+        [ -3243.313965, -273.679932, -0.033905, 0.000000, 90.000000, 0.000000 ]
+
+      ],
+      "ambulance_loc": [
+        [
+          950,
+          130,
+          0,
+          0,
+          180,
+          0
+        ],
+        [
+          950,
+          130,
+          0,
+          0,
+          180,
+          0
+        ],
+        [
+          -1730,
+          -510,
+          0,
+          0,
+          180,
+          0
+        ],
+
+        [
+          -1935.404492,
+          -363.085621,
+          0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -1926.97122,
+          146.99731,
+          0.0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -316.644115,
+          146.997311,
+          0.0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          -582.951605,
+          -89.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -1172.951605,
+          -89.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [
+          -1062.951605,
+          -89.342301,
+          0.000000,
+          0.000000,
+          180.000000,
+          0.000000
+        ],
+        [ 230.000000, -139.342301, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -2360.000000, -139.342301, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -2190.000000, -129.342301, 0.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1790.000000, -329.342301, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -2240.000000, 0.657699, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -3260.000000, -89.342301, 0.000000, 0.000000, 0.000000, 0.000000 ]
+
+
+      ],
+      "reference_text": [
+        [
+          "There is a person injured and lying beside the swimming pool of the house in front of you. The swimming pool is located on the left side of the house. The injured person is a male agent wearing a dark shirt and pants. The swimming pool is surrounded by a wooden fence and there is a patio area with some furniture nearby. There are trees and bushes in the background, and the house has a gray roof and white siding. Please find the person and carry him to the yellow ambulance stretcher."
+        ],
+        [
+          "There is a person injured and lying in the courtyard beside the garage door of your left house. The injured person is a male agent wearing a light yellow shirt and dark blue pants. The courtyard is surrounded by a wooden fence and there is a patio area with some furniture nearby. There are trees and bushes in the background, and the house has a gray roof and white siding. Please find the person and carry him to the yellow ambulance stretcher."
+        ],
+        [
+          "A person is lying injured next to the red car on the right side of your house. The injured person is a male wearing a red jacket and gray pants. The red car is parked on the driveway, and there is a white house with a garage door in the background. The area is surrounded by trees and bushes, and there is a sidewalk nearby. Please find the person and carry him to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is on a patch of grass to your right front, surrounded by some bushes and a red car. The injured person is a female wearing a white shirt and blue jeans. The area is in front of a house with a white garage door and a white picket fence. The house has gray siding and a gray roof, and there are trees and other houses in the background. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is in the garden of a white building to your left front, surrounded by a white fence and some grass and bushes. The injured person is a female wearing a white shirt and blue pants. The garden is well - maintained with green grass and various bushes. There is a white house with a brown roof in the background, and the garden is in front of the house. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is in the garden of a white building to your right front, surrounded by bushes and a white wall. The injured person is a female wearing a white shirt and blue jeans. The garden is well - maintained with green grass and various bushes. There is a white house with a gray roof in the background, and the garden is in front of the house. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is lying on the grass near a picket fence in a suburban neighborhood to your right, with houses and a red car in the background. The injured person is a female wearing a white shirt and blue jeans. The area is in front of a house with a white picket fence and a gray roof. There are trees and bushes nearby, and a sidewalk runs along the front of the house. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "In front of you, the injured person is lying on the wooden porch of a house, with a picket fence and green grass surrounding the area. The injured person is a female agent wearing a white shirt and blue jeans. The porch has a wooden floor and white railings, and there are some potted plants nearby. The house has a gray roof and white siding, and there are trees and bushes in the background. Please find this person and carry her to the yellow ambulance stretcher."
+        ],
+        [
+          "In front of you, the injured person is lying on the wooden porch of a house, with a picket fence and green grass surrounding the area. The injured person is a female wearing a white shirt and blue jeans. The porch has a wooden floor and white railings, and there are some potted plants nearby. The house has a gray roof and white siding, and there are trees and bushes in the background. Please find this person and carry him to the yellow ambulance stretcher."
+        ],
+        [ "The injured woman is lying on the left side of the house in front of you. She is on the grass, near the hedge and some bushes. The house has a porch with planters, and a wooden fence is visible in the background. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "The injured woman is lying in front of the house to your left. She is on the grass near the building, wearing a floral shirt, blue jeans, and boots. The house has a red door, a small porch with planters, and multiple windows with dark shutters. A white picket fence runs along the yard. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "The injured woman is lying behind the car in front of you. She is lying on the sidewalk near a house with a porch and a small garden. A tree stands nearby, casting a shadow over the ground. The car is parked on the street, and a wooden fence is visible in the background. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "The injured woman is lying in the yard of the house in front of you. She is on the grass, surrounded by bushes with pink flowers. The house has a wooden porch with two chairs, a walkway leading to the entrance, and a garage to the right. A white picket fence borders the yard. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "The injured woman is lying on the grass to your right. She is near a house with a garage, close to a row of pink flowers along the driveway. A white fence runs along the back of the yard, with bushes and trees nearby. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "The injured woman is lying at the entrance of the parking area next to the house in front of you. She is on the concrete ground in front of a white garage door. The house has a red door, a small porch with planters, and exterior lights mounted on the wall. Please find her and carry her to the yellow ambulance stretcher." ]
+      ],
+      "reference_image_path": [
+        [
+          "SuburbNeighborhood_Day_level_2_0.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_2_1.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_2_2.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_2_3.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_2_4.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_2_5.png"
+        ],
+        [
+          "SuburbNeighborhood_Day_level_2_6.png"
+        ],
+        [ "SuburbNeighborhood_Day_level_2_7.png" ],
+        [ "SuburbNeighborhood_Day_level_2_8.png" ],
+        [ "SuburbNeighborhood_Day_level_2_9.png" ],
+        [ "SuburbNeighborhood_Day_level_2_10.png" ],
+        [ "SuburbNeighborhood_Day_level_2_11.png" ],
+        [ "SuburbNeighborhood_Day_level_2_12.png" ],
+        [ "SuburbNeighborhood_Day_level_2_13.png" ],
+        [ "SuburbNeighborhood_Day_level_2_14.png" ]
+      ]
+    },
+    "level_3": {
+      "injured_agent_id": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8,
+        6,
+        6,
+        7,
+        7
+      ],
+      "agent_loc": [
+        [ -1479.000000, 1010.000000, 175.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -2670.000000, -1160.000000, 175.000000, 0.000000, -90.000000, 0.000000 ],
+        [ 1180.000000, 1930.000000, 185.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 720.000000, 1700.000000, 185.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 160.32213, -173.459427, 118.948155, 0.000000, 0.000000, 0.000000 ],
+        [ 160.32213, -173.459427, 118.948155, 0.000000, 0.000000, 0.000000 ],
+        [ 312.875422, -173.459427, 133.669285, 0.000000, 0.000000, 0.000000 ],
+        [ -644.639262, -173.45943, 162.130524, 0.000000, 180.000000, 0.000000 ],
+        [ -644.639262, -173.45943, 162.130524, 0.000000, 180.000000, 0.000000 ],
+        [ -644.639262, -173.45943, 162.130524, 0.000000, 180.000000, 0.000000 ],
+        [ 494.147831, -173.459429, 170.677125, 0.000000, 0.000000, 0.000000 ],
+        [ 494.147831, -173.459429, 170.677125, 0.000000, 0.000000, 0.000000 ],
+        [ 494.147831, -173.459429, 170.677125, 0.000000, 0.000000, 0.000000 ],
+        [ 358.488353, -173.459429, 133.669292, 0.000000, 180.000000, 0.000000 ],
+        [ 358.488353, -173.459429, 133.669292, 0.000000, 180.000000, 0.000000 ]
+      ],
+      "injured_player_loc": [
+        [ -1297.033447, 1802.965942, 170.999969, 0.000000, 90.000000, 0.000000 ],
+        [ -2551.928223, -1816.430542, 170.000061, 0.000000, 0.000000, 0.000000 ],
+        [ 474.401917, 1955.628174, 470.000031, 0.000000, 0.000000, 0.000000 ],
+        [ 193.270859, 1956.360107, 180.000015, 0.000000, 0.000000, 0.000000 ],
+        [ 101.651951, -1840.181601, 167.372857, 0.000000, 60.000000, 0.000000 ],
+        [ 1291.537543, 1962.155582, 170.012801, 0.000000, 60.000000, 0.000000 ],
+        [ 3553.343187, -207.917595, 161.554245, 0.000000, 60.000000, 0.000000 ],
+        [ -2709.152773, -1963.372267, 167.183024, 0.000000, 90.000000, 0.000000 ],
+        [ -1609.417913, 2258.684864, 172.520588, 0.000000, 90.000000, 0.000000 ],
+        [ -2187.532862, -2179.996923, 167.183024, 0.000000, 90.000000, 0.000000 ],
+        [ 3474.861887, 480.145034, 165.180605, 0.000000, 0.000000, 0.000000 ],
+        [ 3363.485241, 1078.936853, 166.112233, 0.000000, 90.000000, 0.000000 ],
+        [ 3731.285082, -718.013099, 170.358762, 0.000000, 180.000000, 0.000000 ],
+        [ 1059.809853, 2074.227387, 170.012802, 0.000000, 0.000000, 0.000000 ],
+        [ 969.851041, -2177.080111, 166.252541, 0.000000, 60.000000, 0.000000 ]
+      ],
+      "stretcher_loc": [
+        [ -1302.951605, 260.657699, 0.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -2442.951605, -139.342301, 0.000000, 0.000000, -90.000000, 0.000000 ],
+        [ 58.136074, 190.95649, 0.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -52.772598, 232, 0.000000, 0.000000, -90.000000, 0.000000 ],
+        [ 332.398393, 95.008465, 0, 0.000000, -90.000000, 0.000000 ],
+        [ 332.398393, 95.008465, 0, 0.000000, -90.000000, 0.000000 ],
+        [ 332.398393, 95.008465, 0, 0.000000, -90.000000, 0.000000 ],
+        [ -1416.9464, 52.925208, 0.000000, 0.000000, 60.000000, 0.000000 ],
+        [ -1416.9464, 52.925208, 0.000000, 0.000000, 60.000000, 0.000000 ],
+        [ -1416.9464, 52.925208, 0.000000, 0.000000, 60.000000, 0.000000 ],
+        [ 647.840927, 103.608572, 0.000000, 0.000000, 60.000000, 0.000000 ],
+        [ 647.840927, 103.608572, 0.000000, 0.000000, 60.000000, 0.000000 ],
+        [ 647.840927, 103.608572, 0.000000, 0.000000, 60.000000, 0.000000 ],
+        [ 312.020331, 159.956492, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 312.020331, 159.956492, 0.000000, 0.000000, 0.000000, 0.000000 ]
+      ],
+      "ambulance_loc": [
+        [ -1322.951605, 50.657699, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -2432.951605, 50.657699, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 277.048395, 50.657699, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 277.048395, 50.657699, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -191.96226, 118.691868, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -191.96226, 118.691868, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -191.96226, 118.691868, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -1031.558696, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -1031.558696, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -1031.558696, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 7.325421, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 7.325421, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 7.325421, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -186.68986, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ],
+        [ -186.68986, 159.610609, 0.000000, 0.000000, 180.000000, 0.000000 ]
+      ],
+      "reference_text": [
+        [ "In the house on your right, the injured person is lying on the floor near a couch, with a fireplace and a TV in the background.Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "In the house in front of you, behind the red door, lies a injured person in the hallway at the entrance of the room. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "On the floor of the room upstairs, accessed by the stairs in front of you, lies a wounded person. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "In the room connected to the one you are in, lies a injured person behind a white door, with a shelf filled with clutter next to him. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "The injured person is in the first- floor living room of the building on your left.Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "The injured person is in the first building on your right, in the living room on the first floor. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is a injured person on the first floor of this building directly in front of you. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person on the first floor of this building with a red gate on the right side in front of you. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is a injured person on the first floor of this building in front of you to the left. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person in the corridor on the first floor of the building with a red gate on the left side in front of you.Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person in front of you in the corridor on the first floor of this house. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person on the first floor of this house in front of you, on the right side of the entrance.Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person in front of you on the first floor of this house, in the living room that passes through a corridor.Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person on the first floor of a building on your left rear side, with a staircase nearby. Please find this person and carry him/her to the yellow ambulance stretcher." ],
+        [ "There is an injured person on the first floor of a building behind you on the right side, at the end of the corridor. Please find this person and carry him/her to the yellow ambulance stretcher." ]
+      ],
+      "reference_image_path": [
+        [ "SuburbNeighborhood_Day_level_3_0.png" ],
+        [ "SuburbNeighborhood_Day_level_3_1.png" ],
+        [ "SuburbNeighborhood_Day_level_3_2.png" ],
+        [ "SuburbNeighborhood_Day_level_3_3.png" ],
+        [ "SuburbNeighborhood_Day_level_3_4.png" ],
+        [ "SuburbNeighborhood_Day_level_3_5.png" ],
+        [ "SuburbNeighborhood_Day_level_3_6.png" ],
+        [ "SuburbNeighborhood_Day_level_3_7.png" ],
+        [ "SuburbNeighborhood_Day_level_3_8.png" ],
+        [ "SuburbNeighborhood_Day_level_3_9.png" ],
+        [ "SuburbNeighborhood_Day_level_3_10.png" ],
+        [ "SuburbNeighborhood_Day_level_3_11.png" ],
+        [ "SuburbNeighborhood_Day_level_3_12.png" ],
+        [ "SuburbNeighborhood_Day_level_3_13.png" ],
+        [ "SuburbNeighborhood_Day_level_3_14.png" ]
+      ]
+    },
+    "level_4": {
+      "injured_agent_id": [
+        7,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        13,
+        4,
+        4,
+        12,
+        4,
+        11,
+        10,
+        9
+      ],
+      "agent_loc": [
+        [
+          620,
+          -179,
+          77,
+          0,
+          0,
+          0
+        ],
+        [
+          1818.207590,
+          134.298249,
+          101.232189,
+          0,
+          0,
+          0
+        ],
+        [
+          435.076446,
+          -218.459427,
+          95.444795,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1957.437913,
+          -32.459427,
+          95.444797,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1940.437913,
+          -32.459427,
+          95.444797,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1424.076446,
+          435.459427,
+          105.444795,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [ -2544.375854, -1050.019287, 160.000000, 0.000000, -90.000000, 0.000000 ],
+        [ -2544.375854, -1050.019287, 160.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1454.375854, 889.980713, 160.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1454.375854, 889.980713, 160.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 1339.591797, 930.637573, 160.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 1339.591797, 1240.637573, 180.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 2586.580566, 100.822357, 160.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 2696.580566, 100.822357, 170.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 2696.580566, 100.822357, 170.000000, 0.000000, 0.000000, 0.000000 ]
+      ],
+      "injured_player_loc": [
+        [
+          1387,
+          1955,
+          526,
+          0,
+          60,
+          0
+        ],
+        [
+          3367,
+          1085,
+          190,
+          0,
+          60,
+          0
+        ],
+        [
+          532.316617,
+          -1800.320917,
+          208.540865,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          3689.716624,
+          370.218813,
+          468.076156,
+          0.0,
+          70.0,
+          0.0
+        ],
+        [
+          3721.125117,
+          995.813749,
+          468.076155,
+          0.0,
+          70.0,
+          0.0
+        ],
+        [
+          -2460.0,
+          2051.176544,
+          167.98138,
+          0.0,
+          70.0,
+          0.0
+        ],
+        [ -1940.375854, -1861.019287, 231.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1340.000000, -2030.000000, 170.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -2385.456787, 1759.550049, 180.000000, 0.000000, 90.000000, 0.000000 ],
+        [ -1778.967896, 1859.347534, 159.999969, 0.000000, 180.000000, 0.000000 ],
+        [ -112.772598, 1685.033936, 170.000000, 0.000000, 180.000000, 0.000000 ],
+        [ 714.632507, 1654.255615, 480.000031, 0.000000, 90.000000, 0.000000 ],
+        [ 3295.319769, -1101.001196, 166.916541, 0.000000, 0.000000, 0.000000 ],
+        [ 3139.136963, 1189.308838, 170.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 3398.440186, 118.719299, 470.000000, 0.000000, 90.000000, 0.000000 ]
+      ],
+      "stretcher_loc": [
+        [
+          1440,
+          250,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          1567.822666,
+          -78.754261,
+          -2.215609,
+          0,
+          0,
+          0
+        ],
+        [
+          121.551075,
+          95.008465,
+          0.0,
+          0.0,
+          60.0,
+          0.0
+        ],
+        [
+          1440.889216,
+          95.008465,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1440.889216,
+          95.008465,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1310.398393,
+          95.008465,
+          0.0,
+          0.0,
+          90.0,
+          0.0
+        ],
+        [ -2733.313965, -273.679932, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ -2733.313965, -273.679932, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ -1493.313965, 236.320068, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ -1493.313965, 236.320068, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ 1210.000000, 270.000000, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ 1380.000000, 320.000000, -0.033905, 0.000000, 90.000000, 0.000000 ],
+        [ 1880.000000, 0.000000, -0.033905, 0.000000, 0.000000, 0.000000 ],
+        [ 1880.000000, 0.000000, -0.033905, 0.000000, 0.000000, 0.000000 ],
+        [ 1880.000000, 0.000000, -0.033905, 0.000000, 0.000000, 0.000000 ]
+      ],
+      "ambulance_loc": [
+        [
+          950,
+          130,
+          0,
+          0,
+          180,
+          0
+        ],
+        [
+          1345,
+          38,
+          -2,
+          0,
+          90,
+          0
+        ],
+        [
+          -316.644115,
+          146.997311,
+          0.0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        [
+          1161.738955,
+          52.997311,
+          0.0,
+          0.0,
+          90.0,
+          0.0
+        ],
+        [
+          1161.738955,
+          52.997311,
+          0.0,
+          0.0,
+          90.0,
+          0.0
+        ],
+        [
+          -1310.96226,
+          -82.691868,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [ -2800.000000, -89.342301, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -2800.000000, -89.342301, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1520.000000, 0.657699, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ -1520.000000, 0.657699, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 1170.000000, 90.657699, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 1400.000000, 90.657699, 0.000000, 0.000000, 0.000000, 0.000000 ],
+        [ 1680.000000, 90.657699, 0.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 1680.000000, 90.657699, 0.000000, 0.000000, 90.000000, 0.000000 ],
+        [ 1680.000000, 90.657699, 0.000000, 0.000000, 90.000000, 0.000000 ]
+
+      ],
+      "reference_text": [
+        [
+          "The injured person is on the indoor second floor of a house where a red car is parked at the door"
+        ],
+        [
+          "The injured person is in the kitchen on the first floor of the house in front of you."
+        ],
+        [
+          "The injured person is in a bedroom on the first floor of a single-story house to your left. Please find this person and carry him/her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is in the second-floor corridor of a house in front of you, surrounded by a staircase and some room doors. Please find this person and carry him/her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is in a spacious bedroom facing the street on the second floor of a house in front of you. Please find this person and carry him/her to the yellow ambulance stretcher."
+        ],
+        [
+          "The injured person is in a bedroom at the end of the corridor on the first floor of a house to your right rear. Please find this person and carry him/her to the yellow ambulance stretcher."
+        ],
+        [ "There is an injured woman lying in the bedroom on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the room at the end of the hallway on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the warehouse at the end of the hallway on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the bathroom on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the warehouse on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the washroom on the second floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the living room on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the dining room on the first floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ],
+        [ "There is an injured woman lying in the room on the second floor of the house in front of you. Please find her and carry her to the yellow ambulance stretcher." ]
+      ],
+      "reference_image_path": [
+        [ "SuburbNeighborhood_Day_level_4_0.png" ],
+        [ "SuburbNeighborhood_Day_level_4_1.png" ],
+        [ "SuburbNeighborhood_Day_level_4_2.png" ],
+        [ "SuburbNeighborhood_Day_level_4_3.png" ],
+        [ "SuburbNeighborhood_Day_level_4_4.png" ],
+        [ "SuburbNeighborhood_Day_level_4_5.png" ],
+        [ "SuburbNeighborhood_Day_level_4_6.png" ],
+        [ "SuburbNeighborhood_Day_level_4_7.png" ],
+        [ "SuburbNeighborhood_Day_level_4_8.png" ],
+        [ "SuburbNeighborhood_Day_level_4_9.png" ],
+        [ "SuburbNeighborhood_Day_level_4_10.png" ],
+        [ "SuburbNeighborhood_Day_level_4_11.png" ],
+        [ "SuburbNeighborhood_Day_level_4_12.png" ],
+        [ "SuburbNeighborhood_Day_level_4_13.png" ],
+        [ "SuburbNeighborhood_Day_level_4_14.png" ]
+      ]
+    }
+  },
+  "obj_num": 2467,
+  "size": 153332.69952,
+  "area": 22548.9264,
+  "bbox": [
+    207.48,
+    108.68,
+    6.8
+  ]
+}
