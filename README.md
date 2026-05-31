@@ -1,33 +1,29 @@
 # RescueBench / Gym-Rescue
 
-RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal Engine and UnrealZoo. It extends the ATEC Championship 2025 Software Algorithm Track virtual rescue task into a standardized benchmark with multi-stage evaluation, progressive difficulty levels, baseline adapters, and expert-trajectory collection tools.
-
-Official ATEC resources: [competition page](https://www.atecup.com/competitions/100009), [software algorithm repository](https://github.com/atecup/atec2025_software_algorithm).
+RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal Engine and UnrealZoo. It provides multi-stage evaluation, progressive difficulty levels, baseline adapters, and expert-trajectory collection tools for embodied agents in complex 3D rescue scenarios. RescueBench was selected as the official evaluation platform for the [ATEC 2025 Software Algorithm Track](https://www.atecup.com/competitions/100009).
 
 ## Problem Definition
 
-RescueBench follows the virtual rescue problem defined by the ATEC 2025 Software Algorithm Track. At the beginning of each episode, the agent receives a color image and text description as initial cues. During execution, the agent observes the world from a first-person RGB camera through a Gym-like Python interface, issues real-time navigation and interaction actions, and receives reward feedback from the simulator.
+At the beginning of each episode, the agent receives a color image and text description as initial cues. During execution, the agent observes the world from a first-person RGB camera through a Gym-like Python interface, issues real-time navigation and interaction actions, and receives reward feedback from the simulator.
 
-The objective is to use the initial cues to locate the rescue target in a complex 3D scene, perform the required interaction, and deliver the target to a designated stretcher as efficiently as possible. The original ATEC platform used the same simulation environment for interaction, data collection, policy training, and final scoring; RescueBench builds on this setup with expanded SAR stages and standardized evaluation scripts.
+The objective is to use the initial cues to locate the rescue target in a complex 3D scene, perform the required interaction, and deliver the target to a designated stretcher as efficiently as possible. RescueBench standardizes this workflow with expanded SAR stages and unified evaluation scripts.
 
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/atecup/atec2025_software_algorithm/blob/main/Figure/image.png">
-        <img src="https://raw.githubusercontent.com/atecup/atec2025_software_algorithm/main/Figure/image.png" alt="ATEC 2025 rescue simulation environment" width="420">
+        <img src="https://raw.githubusercontent.com/atecup/atec2025_software_algorithm/main/Figure/image.png" alt="RescueBench simulation environment" width="420">
       </a><br>
       <b>Simulation environment and first-person observations</b>
     </td>
     <td align="center">
       <a href="https://github.com/atecup/atec2025_software_algorithm/blob/main/Figure/task_cue.png">
-        <img src="https://raw.githubusercontent.com/atecup/atec2025_software_algorithm/main/Figure/task_cue.png" alt="ATEC 2025 task cue example" width="420">
+        <img src="https://raw.githubusercontent.com/atecup/atec2025_software_algorithm/main/Figure/task_cue.png" alt="RescueBench task cue example" width="420">
       </a><br>
       <b>Initial image and text cues</b>
     </td>
   </tr>
 </table>
-
-<p align="center"><sub>Figures from the official <a href="https://github.com/atecup/atec2025_software_algorithm">ATEC 2025 software algorithm repository</a>.</sub></p>
 
 ## Highlights
 
@@ -427,6 +423,6 @@ See `benchmark/README.md` for more details.
 
 <p align="center"><sub>ATEC logo sourced from the <a href="https://www.atecup.com/">official ATEC website</a>.</sub></p>
 
-RescueBench / Gym-Rescue builds on the virtual rescue task and simulator released for the [ATEC Championship 2025 Software Algorithm Track](https://www.atecup.com/competitions/100009). We thank the ATEC organizers for providing the official competition platform, task definition, simulator interface, and baseline repository.
+We thank the [ATEC](https://www.atecup.com/competitions/100009) organizers for the competition platform and simulator resources.
 
 We also acknowledge [UnrealCV](https://unrealcv.org/), OpenAI Gym, [Unreal Engine](https://www.unrealengine.com/), and [UnrealZoo](https://unrealzoo.site/) for the simulation and interaction infrastructure that Gym-Rescue builds on.
