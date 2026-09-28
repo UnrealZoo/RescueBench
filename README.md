@@ -4,7 +4,7 @@ RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal E
 
 ## Problem Definition
 
-At the beginning of each episode, the agent receives a color image and text description as initial cues. During execution, the agent observes the world from a first-person RGB camera through a Gym-like Python interface, issues real-time navigation and interaction actions, and receives reward feedback from the simulator.
+At the beginning of each episode, the agent receives a color image and text description as initial cues. During execution, the agent observes the world from a first-person RGB or RGB-D camera (depending on the baseline) through a Gym-like Python interface, issues real-time navigation and interaction actions, and receives reward feedback from the simulator.
 
 The objective is to use the initial cues to locate the rescue target in a complex 3D scene, perform the required interaction, and deliver the target to a designated stretcher as efficiently as possible. RescueBench standardizes this workflow with expanded SAR stages and unified evaluation scripts.
 
@@ -30,7 +30,7 @@ The objective is to use the initial cues to locate the rescue target in a comple
 - A four-stage SAR benchmark with sequential dependencies.
 - Five difficulty levels covering visual clutter, long-range search, indoor-outdoor transitions, and multi-floor layouts.
 - A standardized benchmark framework under `benchmark/`.
-- Baseline adapters and runners for multiple embodied navigation models.
+- Baseline adapters and runners for multiple embodied navigation models, including SG-Nav with RGB-D mapping.
 - An automatic data collection pipeline under `example/RescueDataCollection.py`.
 - A planned Hugging Face dataset release with approximately 400K expert steps.
 
@@ -129,6 +129,7 @@ The following examples show RescueBench episodes across different maps, agents, 
 | Benchmark framework | `benchmark/rescue_benchmark.py` | Unified evaluation entry point, state machine, metric logging, and result export |
 | Baseline runners | `benchmark/run_*.py` | Thin launchers for individual baselines |
 | Baseline adapters | `benchmark/agents/` | Adapter layer for third-party embodied navigation models |
+| SG-Nav adaptation | `benchmark/sgnav/` | Rescue-specific SG-Nav source overlay, setup notes, license, and single-episode smoke test |
 | Benchmark utilities | `benchmark/utils/` | Collision detection, progress tracking, trajectory similarity, and task state machine |
 | Test point configs | `gym_rescue/envs/setting/test_jsonl/` | Test configurations for different difficulty levels |
 | Data collection pipeline | `example/RescueDataCollection.py` | Automatic expert trajectory and interaction data collection |
@@ -175,6 +176,8 @@ git clone https://github.com/robodhruv/visualnav-transformer
 cd RescueBench
 pip install -e .
 ```
+
+SG-Nav additionally requires its upstream model dependencies and the [RescueBench source overlay](benchmark/sgnav/README.md). Keep its checkpoint workspace under `baseline_model/SG-Nav/` or set `SGNAV_ROOT` to another patched checkout.
 
 ---
 
@@ -259,7 +262,12 @@ By default, place third-party model workspaces under `baseline_model/<ModelName>
 ```bash
 export R2ZEROSHOT_WORKSPACE=/path/to/ROCKET-2/workspace
 export APEX_WORKSPACE=/path/to/Apexcode/apex_code
+export SGNAV_ROOT=/path/to/patched/SG-Nav
 ```
+
+### SG-Nav adaptation
+
+The SG-Nav adapter uses live 640 × 480 RGB-D observations and agent pose. It searches for `person` in the injured-person phase and uses `car` as a visual proxy for the ambulance/stretcher destination. The supplied overlay adds these detection and scene-graph categories while keeping the original 21-class object/room prior matrices; `person` and `car` use zero co-occurrence vectors. SG-Nav action `TURN_RIGHT_2` maps to a 60-unit right-turn command. The shared RescueBench state machine issues carry/drop interactions from simulator distance checks, so this baseline uses environment-assisted interaction. The [adaptation notes](benchmark/sgnav/README.md) document the exact mappings and installation steps.
 
 ---
 
@@ -274,6 +282,8 @@ cd benchmark
 python rescue_benchmark.py --model random --levels 1 --episodes 1
 ```
 
+After installing SG-Nav and its overlay, validate one real episode with `python sgnav/smoke_one.py --level 0 --point-id 0` from the `benchmark/` directory. This writes the result under `benchmark_results/sgnav_smoke/`.
+
 ### Baseline Examples
 
 ```bash
@@ -284,6 +294,10 @@ python run_uni_navid.py --levels 1 --episodes 1 --render
 # ViNT / NoMaD
 cd benchmark
 python run_visualnav.py --model nomad --topomap-dir ./rescue_topomaps --levels 2 --episodes 1 --render
+
+# SG-Nav (requires the patched upstream workspace)
+cd benchmark
+python run_sgnav.py --levels 0 --episodes 1
 
 # R2ZeroShot / ROCKET-2
 cd benchmark
@@ -298,7 +312,7 @@ cd benchmark
 python run_citywalker.py --levels 3 --episodes 1 --render
 ```
 
-See `benchmark/README.md` for detailed command-line arguments and evaluation options.
+Run `python rescue_benchmark.py --help` for shared evaluation options. SG-Nav-specific setup and arguments are in [`benchmark/sgnav/README.md`](benchmark/sgnav/README.md).
 
 ---
 
@@ -309,9 +323,10 @@ See `benchmark/README.md` for detailed command-line arguments and evaluation opt
 | Evaluation core | `benchmark/rescue_benchmark.py` | State machine, metric logging, result export, and unified Agent interface |
 | Thin runners | `benchmark/run_*.py` | Model-specific launchers with preset arguments |
 | Agent adapters | `benchmark/agents/` | Adapters for third-party baselines, including `agent_template.py` |
+| SG-Nav overlay | `benchmark/sgnav/` | Adapted SG-Nav source, setup notes, and one-episode validation script |
 | Utilities | `benchmark/utils/` | Collision detection, trajectory similarity, progress tracking, and task state machine |
 | Topomap helper | `benchmark/collect_rescue_topomap.py`, `benchmark/agents/topomap_utils.py` | Helper tools for topological-map-based methods such as ViNT and NoMaD |
-| Documentation | `benchmark/README.md` | Metrics, state machine, CLI arguments, and new-model integration guide |
+| SG-Nav documentation | `benchmark/sgnav/README.md` | Goal classes, action mapping, interaction protocol, and reproduction requirements |
 
 Test points are driven by `gym_rescue/envs/setting/test_jsonl/level_<L>.jsonl`. Each line contains fields such as `env_id`, agent start location, injured-person location, stretcher/ambulance location, and timeout. The benchmark automatically switches environments based on `env_id`.
 
@@ -370,10 +385,10 @@ Template command:
 
 ```bash
 cd benchmark
-python run_<model>.py --levels 1 2 3 4 5 --episodes 5 --output ./benchmark_results/<model>
+python run_<model>.py --levels 0 1 2 3 4 --episodes 5 --output ./benchmark_results/<model>
 ```
 
-For a quick artifact check, start with the smoke test in the "Running the Benchmark" section.
+For SG-Nav, use `run_sgnav.py` with the patched upstream workspace and a valid `DASHSCOPE_API_KEY` in the process environment for default scene-graph relation scoring. The benchmark state machine handles carry/drop using simulator geometry; report this environment-assisted interaction when comparing methods. No API key is stored in this repository. For a quick artifact check, start with the smoke test in the "Running the Benchmark" section.
 
 ---
 
@@ -385,7 +400,9 @@ RescueBench/
 ├── benchmark/                   # RescueBench evaluation framework
 │   ├── rescue_benchmark.py
 │   ├── run_*.py
+│   ├── run_sgnav.py             # SG-Nav baseline launcher
 │   ├── agents/
+│   ├── sgnav/                   # SG-Nav overlay, docs, and smoke test
 │   └── utils/
 ├── example/                     # Data collection and human-control examples
 │   ├── RescueDataCollection.py
@@ -406,7 +423,7 @@ To integrate a new model:
 3. Call the unified benchmark entry point in `benchmark/rescue_benchmark.py`.
 4. Run a small smoke test to verify action format, rendering, state-machine behavior, and metric output.
 
-See `benchmark/README.md` for more details.
+See `benchmark/agents/agent_template.py` for the adapter interface and [`benchmark/sgnav/README.md`](benchmark/sgnav/README.md) for a complete baseline integration example.
 
 ---
 
