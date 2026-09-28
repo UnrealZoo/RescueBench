@@ -1,6 +1,8 @@
 # RescueBench / Gym-Rescue
 
-RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal Engine and UnrealZoo. It provides multi-stage evaluation, progressive difficulty levels, baseline adapters, and expert-trajectory collection tools for embodied agents in complex 3D rescue scenarios. The [RescueBench paper](https://arxiv.org/abs/2606.01848) is accepted to **NeurIPS 2026** ([official conference listing](https://neurips.cc/virtual/2026/poster/139237)). RescueBench was selected as the official evaluation platform for the [ATEC 2025 Software Algorithm Track](https://www.atecup.com/competitions/100009).
+> **Accepted to NeurIPS 2026** · [Paper](https://arxiv.org/abs/2606.01848) · [Official conference listing](https://neurips.cc/virtual/2026/poster/139237)
+
+RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal Engine and UnrealZoo. It provides multi-stage evaluation, progressive difficulty levels, baseline adapters, and expert-trajectory collection tools for embodied agents in complex 3D rescue scenarios. RescueBench was selected as the official evaluation platform for the [ATEC 2025 Software Algorithm Track](https://www.atecup.com/competitions/100009).
 
 ## Problem Definition
 
