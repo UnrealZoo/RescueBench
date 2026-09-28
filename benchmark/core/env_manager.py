@@ -12,11 +12,15 @@ class EnvManager:
         render_quality: int = 2,
         offscreen: bool = True,
         multiagent_env: bool = False,
+        observation_type: str = "Color",
     ):
         self.resolution = resolution
         self.render_quality = render_quality
         self.offscreen = offscreen
         self.multiagent_env = bool(multiagent_env)
+        if observation_type not in ("Color", "Rgbd"):
+            raise ValueError(f"Unsupported observation type: {observation_type}")
+        self.observation_type = observation_type
 
         self.env = None
         self.current_env_id = None
@@ -28,7 +32,7 @@ class EnvManager:
         env = gym.make(
             env_id,
             action_type="Mixed",
-            observation_type="Color",
+            observation_type=self.observation_type,
             reset_type=level,
         )
         env = config_ue.ConfigUEWrapper(

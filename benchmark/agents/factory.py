@@ -10,6 +10,7 @@ from agents.profiles import get_model_profile
 
 # model_name -> (module_path, class_name)
 AGENT_REGISTRY: Dict[str, Tuple[str, str]] = {
+    "sgnav": ("agents.sgnav_rescue_agent", "SGNavRescueAgent"),
     "vint": ("agents.vint_agent", "VINTAgent"),
     "nomad": ("agents.nomad_agent", "NOMADAgent"),
     "nomad_yolo": ("agents.nomad_yolo_agent", "NOMADYOLOAgent"),
@@ -24,6 +25,7 @@ AGENT_REGISTRY: Dict[str, Tuple[str, str]] = {
 }
 
 AGENT_KWARG_KEYS: Dict[str, Iterable[str]] = {
+    "sgnav": ("sgnav_root", "config_file", "openworld", "goal_detect_interval"),
     "vint": ("device", "topomap_dir", "waypoint_idx"),
     "nomad": ("device", "topomap_dir", "waypoint_idx"),
     "nomad_yolo": (
@@ -136,7 +138,7 @@ def get_agent(model_name: str, env, **kwargs) -> BaseAgent:
             filtered = {k: v for k, v in kwargs.items() if v is not None}
             return cls(**filtered)
         except Exception as e:
-            if model_name == "solution":
+            if model_name in ("solution", "sgnav"):
                 raise
             print(f"[Warning] {cls_name} load failed: {e}, using RandomAgent")
             return RandomAgent(env.action_space)
@@ -208,6 +210,10 @@ def get_agent_from_cli_args(model_name: str, args: Any) -> BaseAgent:
         )
 
         all_kwargs = {
+            "sgnav_root": getattr(args, "sgnav_root", None),
+            "config_file": getattr(args, "sgnav_config", None),
+            "openworld": int(getattr(args, "sgnav_openworld", False)),
+            "goal_detect_interval": getattr(args, "goal_detect_interval", 5),
             "device": getattr(args, "device", "cuda"),
             "topomap_dir": _profile_arg(args, "topomap_dir"),
             "waypoint_idx": _profile_arg(args, "waypoint_idx", 5),

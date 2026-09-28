@@ -1,6 +1,6 @@
 # RescueBench / Gym-Rescue
 
-RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal Engine and UnrealZoo. It provides multi-stage evaluation, progressive difficulty levels, baseline adapters, and expert-trajectory collection tools for embodied agents in complex 3D rescue scenarios. RescueBench was selected as the official evaluation platform for the [ATEC 2025 Software Algorithm Track](https://www.atecup.com/competitions/100009).
+RescueBench is a search-and-rescue (SAR) embodied AI benchmark built on Unreal Engine and UnrealZoo. It provides multi-stage evaluation, progressive difficulty levels, baseline adapters, and expert-trajectory collection tools for embodied agents in complex 3D rescue scenarios. The [RescueBench paper](https://arxiv.org/abs/2606.01848) is accepted to **NeurIPS 2026** ([official conference listing](https://neurips.cc/virtual/2026/poster/139237)). RescueBench was selected as the official evaluation platform for the [ATEC 2025 Software Algorithm Track](https://www.atecup.com/competitions/100009).
 
 ## Problem Definition
 
@@ -246,6 +246,7 @@ The full third-party model code and weights should be obtained from the official
 
 | Model | Official Repository / Page | RescueBench Adapter |
 |-------|-----------------------------|---------------------|
+| SG-Nav | [bagh2178/SG-Nav](https://github.com/bagh2178/SG-Nav) | `benchmark/run_sgnav.py`, `benchmark/agents/sgnav_rescue_agent.py`, [adaptation and setup](benchmark/sgnav/README.md) |
 | ViNT / NoMaD | [robodhruv/visualnav-transformer](https://github.com/robodhruv/visualnav-transformer), [project page](https://general-navigation-models.github.io/vint/) | `benchmark/run_visualnav.py`, `benchmark/agents/vint_agent.py`, `benchmark/agents/nomad_agent.py`, `benchmark/agents/nomad_yolo_agent.py` |
 | Uni-NaVid | [jzhzhang/Uni-NaVid](https://github.com/jzhzhang/Uni-NaVid), [Hugging Face](https://huggingface.co/Jzzhang/Uni-NaVid) | `benchmark/run_uni_navid.py`, `benchmark/agents/uninavid_agent.py` |
 | CityWalker | [ai4ce/CityWalker](https://github.com/ai4ce/CityWalker) | `benchmark/run_citywalker.py`, `benchmark/agents/citywalker_agent.py` |
@@ -408,6 +409,20 @@ To integrate a new model:
 See `benchmark/README.md` for more details.
 
 ---
+
+## Citation
+
+If you use RescueBench, please cite the NeurIPS 2026 paper ([conference entry](https://neurips.cc/virtual/2026/poster/139237), [arXiv](https://arxiv.org/abs/2606.01848)):
+
+```bibtex
+@inproceedings{wu2026rescuebench,
+  title     = {RescueBench: Can Embodied Agents Save Lives in the Wild?},
+  author    = {Kui Wu and Beiyu Guo and Hao Chen and ShuHang Xu and Yuling Li and Yongdan Zeng and Zhoujun Li and Yizhou Wang and Fangwei Zhong},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2606.01848}
+}
+```
 
 ## Acknowledgments
 

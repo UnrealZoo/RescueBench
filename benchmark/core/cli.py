@@ -66,6 +66,8 @@ def create_base_parser(
         default=[640, 640],
         help="Image resolution as WIDTH HEIGHT; usually set by the model profile",
     )
+    parser.add_argument("--observation-type", choices=["Color", "Rgbd"], default="Color",
+                        help="Gym camera observation; SG-Nav requires Rgbd")
     parser.add_argument(
         "--levels",
         type=int,
@@ -278,6 +280,13 @@ def add_model_args(parser: argparse.ArgumentParser, expose_advanced: bool = Fals
     parser.add_argument("--temperature", type=float, default=None, help=_advanced_help("OmniNav text mode temperature", expose_advanced))
     parser.add_argument("--quiet", action="store_true", help=_advanced_help("Reduce agent log output", expose_advanced))
     parser.add_argument("--log-waypoint", action="store_true", help=_advanced_help("Print OmniNav waypoint debug logs", expose_advanced))
+    parser.add_argument("--sgnav-root", default=os.environ.get("SGNAV_ROOT"),
+                        help="Patched SG-Nav workspace (or SGNAV_ROOT)")
+    parser.add_argument("--sgnav-config", default=None, help=_advanced_help("SG-Nav Habitat YAML", expose_advanced))
+    parser.add_argument("--sgnav-openworld", action="store_true",
+                        help=_advanced_help("Use SG-Nav open-world vocabulary", expose_advanced))
+    parser.add_argument("--goal-detect-interval", type=int, default=5,
+                        help=_advanced_help("Steps between GLIP goal detections", expose_advanced))
 
 
 def run_benchmark_from_args(
@@ -329,6 +338,7 @@ def run_benchmark_from_args(
         env_id=getattr(args, "env", "UnrealRescue-FlexibleRoom"),
         agent=agent,
         resolution=tuple(getattr(args, "resolution", [640, 640])),
+        observation_type=getattr(args, "observation_type", "Color"),
         render=getattr(args, "render", False),
         output_dir=model_output_dir,
         enable_collision_detection=not getattr(args, "no_collision", False),

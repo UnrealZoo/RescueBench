@@ -108,6 +108,7 @@ class RescueBenchmark:
         resume_skip: str = 'all',
         resume_append: bool = False,
         multiagent_env: bool = False,
+        observation_type: str = "Color",
     ):
         self.env_id = env_id
         self.agent = agent
@@ -141,6 +142,7 @@ class RescueBenchmark:
         self.resume_skip = resume_skip
         self.resume_append = bool(resume_append)
         self.multiagent_env = bool(multiagent_env)
+        self.observation_type = observation_type
         
         self.env = None
         self.current_env_id = None
@@ -152,6 +154,7 @@ class RescueBenchmark:
             render_quality=self.render_quality,
             offscreen=self.offscreen,
             multiagent_env=self.multiagent_env,
+            observation_type=self.observation_type,
         )
         self.task_loader = TaskLoader(
             gym_rescue_root=os.path.join(GYM_RESCUE_ROOT, "gym_rescue"),

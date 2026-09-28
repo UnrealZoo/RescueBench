@@ -34,6 +34,16 @@ MODEL_PROFILES: Dict[str, ModelProfile] = {
         benchmark_defaults=dict(BASE_BENCHMARK_DEFAULTS),
         description="Random action-space baseline.",
     ),
+    "sgnav": ModelProfile(
+        model_name="sgnav",
+        benchmark_defaults={
+            **BASE_BENCHMARK_DEFAULTS,
+            "resolution": [640, 480],
+            "observation_type": "Rgbd",
+            "place_distance": 200.0,
+        },
+        description="SG-Nav navigation baseline with benchmark-managed rescue interactions.",
+    ),
     "vint": ModelProfile(
         model_name="vint",
         benchmark_defaults=dict(BASE_BENCHMARK_DEFAULTS),
